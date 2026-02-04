@@ -1,4 +1,4 @@
-/* Dark Frog Theme Colors */
+/* Dark Frog Theme Colors - Clean Version */
 :root {
     --frog-green: #00e676; /* Neon Kurbağa Yeşili */
     --text-highlight: #69f0ae; 
@@ -38,14 +38,13 @@ h1 {
     font-size: 3rem;
     margin-top: 20px;
     font-weight: 800;
-    color: #ffffff; /* "Hello! I'm" kısmı beyaz kalır */
+    color: #ffffff;
 }
 
-/* İSMİN OLDUĞU KISIM BURASI */
 .highlight {
-    color: var(--frog-green) !important; /* İsmini zorla YEŞİL yapar */
-    text-shadow: 0 0 20px rgba(0, 230, 118, 0.6); /* Arkasına yeşil ışık yayar */
-    display: inline-block; /* Parlamanın düzgün görünmesi için */
+    color: var(--frog-green) !important;
+    text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
+    display: inline-block;
 }
 
 h2 {
