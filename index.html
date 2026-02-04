@@ -24,7 +24,7 @@
 
         <section class="story-section" id="intro">
             <img src="hello.gif" alt="Hello Frog" class="frog-gif main-gif">
-            <h1>Hello! I'm <span class="highlight" id="typing-text"></span><span class="cursor">|</span></h1>
+            <h1>Hello! I'm <span class="highlight" id="typing-text"></span><span class="cursor" id="typed-cursor">|</span></h1>
         </section>
 
         <section class="story-section">
@@ -152,19 +152,26 @@
     </main>
 
     <script>
-        const textToType = "Ozan Arda Özçelik."; // Yazılacak metin
+        const textToType = "Ozan Arda Özçelik.";
         const typingElement = document.getElementById('typing-text');
+        const cursorElement = document.getElementById('typed-cursor'); // İmleci seç
         let charIndex = 0;
 
         function typeWriter() {
             if (charIndex < textToType.length) {
+                // Yazmaya devam et
                 typingElement.innerHTML += textToType.charAt(charIndex);
                 charIndex++;
-                setTimeout(typeWriter, 100); // Yazma hızı (ms cinsinden - daha düşük daha hızlı)
+                setTimeout(typeWriter, 100); 
+            } else {
+                // YAZMA BİTTİ!
+                // Yarım saniye (500ms) bekleyip imleci gizleyen sınıfı ekle
+                setTimeout(() => {
+                    cursorElement.classList.add('typing-done');
+                }, 500);
             }
         }
 
-        // Sayfa yüklendiğinde yazmaya başla (biraz gecikmeli)
         window.onload = function() {
             setTimeout(typeWriter, 1000);
         };
