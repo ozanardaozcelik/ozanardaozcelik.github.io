@@ -1,4 +1,4 @@
-/* Dark Frog Theme Colors - Animated Version (Big Floating Frog) */
+/* Dark Frog Theme Colors - Final Ultimate Version */
 :root {
     --frog-green: #00e676;
     --text-highlight: #69f0ae; 
@@ -37,15 +37,20 @@ body {
     animation: blink 1s step-end infinite;
 }
 
+/* YENİ: Yazma bittiğinde imleci gizle */
+.cursor.typing-done {
+    display: none;
+}
+
 @keyframes blink {
     from, to { opacity: 1; }
     50% { opacity: 0; }
 }
 
-/* 2. Ekranda Gezen Kurbağa (Floating Frog) - GÜNCELLENDİ */
+/* 2. Ekranda Gezen Kurbağa (Floating Frog) */
 .floating-frog {
     position: fixed; /* Sayfa kaydırılsa bile ekranda sabit kalır */
-    width: 150px; /* BOYUT ARTTIRILDI (Eskisi 60px idi) */
+    width: 150px; /* BOYUT */
     height: auto;
     z-index: 9999; /* Her şeyin üstünde olsun */
     pointer-events: none; /* Tıklamaları engellemesin */
@@ -277,7 +282,5 @@ h2 {
     h1 { font-size: 2.2rem; }
     .story-text { font-size: 1.1rem; }
     .frog-gif { max-width: 80%; }
-    .floating-frog { width: 80px; } /* Mobilde de büyütüldü (Eskisi 40px idi) */
+    .floating-frog { width: 100px; } /* Mobilde de büyütüldü (Eskisi 40px idi) */
 }
-
-
