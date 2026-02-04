@@ -1,96 +1,143 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozan Arda Özçelik | Yazılım Geliştirici</title>
-    <meta name="description" content="Ozan Arda Özçelik - Bilgisayar Mühendisliği Öğrencisi ve Yazılım Geliştirici.">
+    <title>Ozan Arda Özçelik | Software Engineer</title>
+    <meta name="description" content="Portfolio of Ozan Arda Özçelik - Computer Engineering Student & AI Enthusiast.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <nav>
+        <div class="logo">OZAN.DEV</div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="mailto:ozanardaozcelik@example.com" class="contact-btn">Contact</a>
+        </div>
+    </nav>
+
     <header class="hero">
-        <div class="overlay"></div>
         <div class="container hero-content">
-            <div class="avatar-container">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Aang_in_The_Last_Airbender_opening.png" alt="Ozan Arda Özçelik" class="profile-pic">
+            <div class="hero-text">
+                <p class="greeting">Hello, I am</p>
+                <h1>Ozan Arda Özçelik</h1>
+                <h2 class="glitch-effect">Computer Engineering Student & AI Developer & Image Processing Developer </h2>
+                <p class="bio-text">
+                    Team Lead at <strong>Şahi Otonom UAV</strong>. Passionate about Artificial Intelligence, Computer Vision, and Software Architecture.
+                    Mastering the four elements of code: Python, C, AI, and Algorithms.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="https://github.com/ozanardaozcelik" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div>
             </div>
-            <h1>Merhaba, ben <span class="highlight">Ozan Arda Özçelik</span></h1>
-            <p class="subtitle">Computer Engineering Student @ NKU | AI Enthusiast</p>
-            <p class="quote">"Yip Yip! Kodlamaya uçuşa geçiyoruz."</p>
             
-            <div class="social-links">
-                <a href="https://github.com/ozanardaozcelik" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ozanardaozcelik/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:ozanardaozcelik@example.com"><i class="fas fa-envelope"></i></a>
+            <div class="hero-visual">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZ0cHRwM3BubGZ0cHRwM3BubGZ0cHRwM3BubGZ0cHRwM3BubGZ0cHAmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/1vVAda9pW4xJ2/giphy.gif" alt="Avatar State Mode" class="avatar-gif">
             </div>
         </div>
     </header>
 
     <section id="about" class="container">
-        <h2><i class="fas fa-water"></i> Hakkımda</h2>
-        <p>Namık Kemal Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Yapay Zeka, Görüntü İşleme ve Python üzerine yoğunlaşıyorum. Şahi Otonom İHA takımında Yazılım Ekip Lideri olarak görev alıyorum ve TEKNOFEST süreçlerinde aktif rol oynuyorum. Alevi türküleri dinlemeyi ve Avatar evrenini keşfetmeyi severim.</p>
+        <div class="section-header">
+            <h3><i class="fas fa-user-astronaut"></i> About Me</h3>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <h4>🎓 Education</h4>
+                <p>3rd Year Computer Engineering Student at <strong>Namık Kemal University</strong>.</p>
+            </div>
+            <div class="about-card">
+                <h4>🚀 Leadership</h4>
+                <p>Software Team Lead for <strong>Şahi Otonom (UAV)</strong>. Former Head of Software Committee at Huawei Student Branch.</p>
+            </div>
+            <div class="about-card">
+                <h4>💼 Experience</h4>
+                <p>Completed AI Internship at <strong>Martur Fompak International</strong> (2025).</p>
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="container">
-        <h2><i class="fas fa-fire"></i> Yetenekler</h2>
-        <div class="skills-grid">
-            <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
-            <span class="skill-badge"><i class="fas fa-brain"></i> Machine Learning</span>
-            <span class="skill-badge"><i class="fas fa-eye"></i> Computer Vision</span>
-            <span class="skill-badge"><i class="fas fa-code"></i> C Programming</span>
-            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+        <div class="section-header">
+            <h3><i class="fas fa-bolt"></i> Technical Arsenal</h3>
+        </div>
+        <div class="skills-wrapper">
+            <span class="skill">Python</span>
+            <span class="skill">C / C++</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Computer Vision</span>
+            <span class="skill">OpenCV</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">Team Management</span>
         </div>
     </section>
 
     <section id="projects" class="container">
-        <h2><i class="fas fa-wind"></i> Projelerim</h2>
+        <div class="section-header">
+            <h3><i class="fas fa-code-branch"></i> Featured Projects</h3>
+        </div>
         <div class="project-grid">
+
+            <div class="project-card featured">
+                <div class="card-icon"><i class="fas fa-plane"></i></div>
+                <div class="card-content">
+                    <h4>Şahi Otonom UAV System</h4>
+                    <p>Leading the software development for the Unmanned Aerial Vehicle (UAV) team preparing for TEKNOFEST. Developing autonomous flight algorithms.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Embedded Systems</span><span>Team Lead</span>
+                    </div>
+                </div>
+            </div>
             
             <div class="project-card">
-                <div class="card-header">
-                    <h3>🐢 TurtleAimBot</h3>
-                    <span class="tag">Python</span>
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <div class="card-content">
+                    <h4>Employee Loss Analysis</h4>
+                    <p>An Artificial Intelligence model designed to analyze and predict employee resignation reasons using Machine Learning techniques.</p>
+                    <div class="tags">
+                        <span>Machine Learning</span><span>Data Analysis</span><span>Python</span>
+                    </div>
+                    <a href="https://github.com/ozanardaozcelik/EmployeeLoss" target="_blank" class="link-text">View Code <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p>Reflekslerinizi test eden ve geliştiren eğlenceli bir nişan alma oyunu. Python kullanılarak geliştirildi.</p>
-                <a href="https://github.com/ozanardaozcelik/TurtleAimBot" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="project-card">
-                <div class="card-header">
-                    <h3>🎬 FilmDizi Tracker</h3>
-                    <span class="tag">JSON / Data</span>
+                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="card-content">
+                    <h4>TurtleAimBot</h4>
+                    <p>A reflex training game developed with Python. Designed to test and improve user reaction times.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Game Dev</span><span>Turtle</span>
+                    </div>
+                    <a href="https://github.com/ozanardaozcelik/TurtleAimBot" target="_blank" class="link-text">View Code <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p>İzlediğiniz film ve dizileri JSON formatında tutarak takip etmenizi sağlayan kişisel bir kütüphane uygulaması.</p>
-                <a href="https://github.com/ozanardaozcelik/FilmDizi" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="project-card">
-                <div class="card-header">
-                    <h3>🤖 Employee Loss Analysis</h3>
-                    <span class="tag">AI / ML</span>
+                <div class="card-icon"><i class="fas fa-film"></i></div>
+                <div class="card-content">
+                    <h4>FilmDizi Tracker</h4>
+                    <p>A personal library application to track movies and TV series using JSON data structures.</p>
+                    <div class="tags">
+                        <span>JSON</span><span>Data Structure</span>
+                    </div>
+                    <a href="https://github.com/ozanardaozcelik/FilmDizi" target="_blank" class="link-text">View Code <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <p>Çalışanların işten ayrılma nedenlerini analiz eden ve tahminleyen Yapay Zeka modeli projesi.</p>
-                <a href="https://github.com/ozanardaozcelik/EmployeeLoss" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-             <div class="project-card">
-                <div class="card-header">
-                    <h3>✋ Hand Gesture Recognition</h3>
-                    <span class="tag">OpenCV</span>
-                </div>
-                <p>Kameradan alınan görüntü ile parmak sayısını tespit eden görüntü işleme projesi.</p>
-                <a href="https://github.com/ozanardaozcelik" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
             </div>
 
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Ozan Arda Özçelik | Designed with <i class="fas fa-heart"></i> & Airbending</p>
+        <p>Built by <strong>Ozan Arda Özçelik</strong> | <span class="highlight">Yip Yip!</span></p>
+        <div class="socials">
+            <a href="https://github.com/ozanardaozcelik"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
