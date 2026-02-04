@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="description" content="Portfolio of Ozan Arda Özçelik, AI Developer and Computer Engineering Student specialized in Python, Machine Learning and Computer Vision.">
-    <meta name="keywords" content="Ozan Arda Özçelik, AI Developer, Computer Engineering, Python, OpenCV, Machine Learning, Resume, ŞAHİ Otonom">
+    <meta name="keywords" content="Ozan Arda Özçelik, AI Developer, Computer Engineering, Python, OpenCV, Machine Learning, ŞAHİ Otonom">
     <meta name="author" content="Ozan Arda Özçelik">
 
     <link rel="icon" href="favicon.png" type="image/png">
@@ -57,22 +57,6 @@
                 <span class="skill-tag">Machine Learning 🤖</span>
                 <span class="skill-tag">Image Processing 👁️</span>
                 <span class="skill-tag">OpenCV 🎥</span>
-            </div>
-        </section>
-
-        <section class="story-section">
-            <img src="cv.gif" alt="Resume Frog" class="frog-gif">
-            <h2>Resume & CV</h2>
-            <p class="story-text">
-                You can review my academic and professional background in detail here.
-            </p>
-            <div class="button-group">
-                <a href="OzanArdaOzcelikCV.pdf" target="_blank" class="btn btn-cv tr-btn">
-                    <i class="fas fa-file-pdf"></i> Özgeçmiş (TR)
-                </a>
-                <a href="OzanArdaOzcelikCVeng.pdf" target="_blank" class="btn btn-cv en-btn">
-                    <i class="fas fa-file-alt"></i> Resume (EN)
-                </a>
             </div>
         </section>
 
@@ -159,13 +143,11 @@
 
         function typeWriter() {
             if (charIndex < textToType.length) {
-                // Yazmaya devam et
                 typingElement.innerHTML += textToType.charAt(charIndex);
                 charIndex++;
                 setTimeout(typeWriter, 100); 
             } else {
-                // YAZMA BİTTİ!
-                // Bekleme süresi kaldırıldı, imleç anında gizlenir.
+                // YAZMA BİTTİ, imleci gizle
                 cursorElement.classList.add('typing-done');
             }
         }
