@@ -1,9 +1,11 @@
-/* Frog Theme Colors */
+/* Dark Frog Theme Colors */
 :root {
-    --frog-green: #4CAF50; /* Canlı kurbağa yeşili */
-    --dark-green: #2E7D32; /* Koyu yeşil vurgular */
-    --bg-white: #ffffff;
-    --text-dark: #333333;
+    --frog-green: #00e676; /* Neon Kurbağa Yeşili */
+    --text-highlight: #69f0ae; 
+    --bg-black: #121212;
+    --card-bg: #1e1e1e;
+    --text-white: #e0e0e0;
+    --text-gray: #b0b0b0;
 }
 
 * {
@@ -13,11 +15,11 @@
 }
 
 body {
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    font-family: 'Nunito', sans-serif; /* Yuvarlak, samimi font */
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Nunito', sans-serif;
     line-height: 1.7;
-    text-align: center; /* Akış için her şeyi ortalıyoruz */
+    text-align: center;
 }
 
 .container {
@@ -28,7 +30,7 @@ body {
 
 /* Story Sections */
 .story-section {
-    margin-bottom: 80px; /* Bölümler arası boşluk */
+    margin-bottom: 80px;
     padding: 20px;
 }
 
@@ -36,15 +38,19 @@ h1 {
     font-size: 3rem;
     margin-top: 20px;
     font-weight: 800;
+    color: #ffffff; /* "Hello! I'm" kısmı beyaz kalır */
+}
+
+/* İSMİN OLDUĞU KISIM BURASI */
+.highlight {
+    color: var(--frog-green) !important; /* İsmini zorla YEŞİL yapar */
+    text-shadow: 0 0 20px rgba(0, 230, 118, 0.6); /* Arkasına yeşil ışık yayar */
+    display: inline-block; /* Parlamanın düzgün görünmesi için */
 }
 
 h2 {
     font-size: 2.2rem;
     margin-bottom: 30px;
-    color: var(--dark-green);
-}
-
-.highlight {
     color: var(--frog-green);
 }
 
@@ -57,30 +63,31 @@ h2 {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 20px auto;
-    color: #555;
+    color: var(--text-white);
 }
 
 .large-text {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--dark-green);
+    color: var(--text-highlight);
 }
 
 /* Frog GIFs */
 .frog-gif {
-    max-width: 300px; /* GIF'lerin çok büyümesini engeller */
+    max-width: 300px;
     height: auto;
     border-radius: 15px;
     margin-bottom: 20px;
     display: inline-block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
 }
 
 .main-gif {
-    max-width: 350px; /* İlk GIF biraz daha büyük olabilir */
+    max-width: 350px;
 }
 
 .icon-size {
-    max-width: 150px; /* Sondaki küçük GIF */
+    max-width: 150px;
 }
 
 /* Skills Tags */
@@ -93,13 +100,13 @@ h2 {
 }
 
 .skill-tag {
-    background-color: #e8f5e9; /* Çok açık yeşil arka plan */
-    color: var(--dark-green);
+    background-color: #1b5e20;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 50px;
     font-weight: 700;
-    border: 2px solid var(--frog-green);
-    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.2);
+    border: 1px solid var(--frog-green);
+    box-shadow: 0 0 10px rgba(0, 230, 118, 0.2);
 }
 
 /* Projects Grid */
@@ -107,52 +114,60 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    text-align: left; /* Proje kartları içi sola hizalı */
+    text-align: left;
 }
 
 .project-card {
-    background: #fff;
-    border: 3px solid var(--frog-green);
+    background: var(--card-bg);
+    border: 2px solid #333;
     border-radius: 15px;
     padding: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+    border-color: var(--frog-green);
+    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.1);
 }
 
 .project-card h3 {
-    color: var(--dark-green);
+    color: var(--text-white);
     margin-bottom: 10px;
+}
+
+.project-card:hover h3 {
+    color: var(--frog-green);
 }
 
 .project-card p {
     font-size: 0.95rem;
     margin-bottom: 20px;
-    color: #666;
+    color: var(--text-gray);
 }
 
 .btn {
     display: inline-block;
-    background-color: var(--frog-green);
-    color: white;
-    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--frog-green);
+    padding: 8px 16px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 700;
-    transition: background 0.3s;
+    border: 2px solid var(--frog-green);
+    transition: all 0.3s;
 }
 
 .btn:hover {
-    background-color: var(--dark-green);
+    background-color: var(--frog-green);
+    color: #000;
+    box-shadow: 0 0 15px var(--frog-green);
 }
 
 .coming-soon {
-    border-color: #ccc;
-    background-color: #f9f9f9;
-    opacity: 0.8;
+    background-color: #161616;
+    border-color: #333;
+    opacity: 0.7;
 }
 
 .coming-soon h3 {
@@ -160,21 +175,25 @@ h2 {
 }
 
 .btn.disabled {
-    background-color: #ccc;
+    border-color: #555;
+    color: #555;
     pointer-events: none;
 }
 
 /* Final Section */
 .final-section {
     margin-bottom: 40px;
+    border-top: 1px solid #333;
+    padding-top: 40px;
 }
 
 .thanks-text {
     font-size: 1.1rem;
     margin-top: 20px;
+    color: var(--text-gray);
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 600px) {
     h1 { font-size: 2.2rem; }
     .story-text { font-size: 1.1rem; }
