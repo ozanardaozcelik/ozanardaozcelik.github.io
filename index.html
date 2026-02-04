@@ -154,7 +154,7 @@
     <script>
         const textToType = "Ozan Arda Özçelik.";
         const typingElement = document.getElementById('typing-text');
-        const cursorElement = document.getElementById('typed-cursor'); // İmleci seç
+        const cursorElement = document.getElementById('typed-cursor');
         let charIndex = 0;
 
         function typeWriter() {
@@ -165,10 +165,8 @@
                 setTimeout(typeWriter, 100); 
             } else {
                 // YAZMA BİTTİ!
-                // Yarım saniye (500ms) bekleyip imleci gizleyen sınıfı ekle
-                setTimeout(() => {
-                    cursorElement.classList.add('typing-done');
-                }, 500);
+                // Bekleme süresi kaldırıldı, imleç anında gizlenir.
+                cursorElement.classList.add('typing-done');
             }
         }
 
