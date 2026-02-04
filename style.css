@@ -1,4 +1,4 @@
-/* Dark Frog Theme Colors - Clean Version */
+/* Dark Frog Theme Colors - Complete Version */
 :root {
     --frog-green: #00e676; /* Neon Kurbağa Yeşili */
     --text-highlight: #69f0ae; 
@@ -85,9 +85,7 @@ h2 {
     max-width: 350px;
 }
 
-.icon-size {
-    max-width: 150px;
-}
+/* icon-size class removed/not needed for large out.gif */
 
 /* Skills Tags */
 .skills-container {
@@ -145,11 +143,22 @@ h2 {
     color: var(--text-gray);
 }
 
+/* BUTON GRUPLARI VE STİLLERİ (YENİ EKLENDİ) */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     background-color: transparent;
     color: var(--frog-green);
-    padding: 8px 16px;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 700;
@@ -161,8 +170,28 @@ h2 {
     background-color: var(--frog-green);
     color: #000;
     box-shadow: 0 0 15px var(--frog-green);
+    transform: translateY(-3px);
 }
 
+/* CV Butonları (Dolgulu Yeşil) */
+.btn-cv { border: none; color: #fff !important; }
+
+.tr-btn { background-color: #2e7d32; }
+.tr-btn:hover { background-color: #1b5e20; }
+
+.en-btn { background-color: #43a047; }
+.en-btn:hover { background-color: #2e7d32; }
+
+/* İletişim Butonları */
+.btn-contact { border: none; color: #000 !important; font-weight: 800; }
+
+.mail-btn { background-color: #64ffda; box-shadow: 0 0 15px rgba(100, 255, 218, 0.3); }
+.mail-btn:hover { background-color: #1de9b6; box-shadow: 0 0 25px rgba(100, 255, 218, 0.6); }
+
+.linkedin-btn { background-color: #00e676; box-shadow: 0 0 15px rgba(0, 230, 118, 0.3); }
+.linkedin-btn:hover { background-color: #00c853; box-shadow: 0 0 25px rgba(0, 230, 118, 0.6); }
+
+/* Projelerdeki "Coming Soon" */
 .coming-soon {
     background-color: #161616;
     border-color: #333;
