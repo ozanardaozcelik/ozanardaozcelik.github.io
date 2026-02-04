@@ -1,4 +1,4 @@
-/* Dark Frog Theme Colors - Final Ultimate Version */
+/* Dark Frog Theme Colors - Animated Version */
 :root {
     --frog-green: #00e676;
     --text-highlight: #69f0ae; 
@@ -8,7 +8,7 @@
     --text-gray: #b0b0b0;
 }
 
-/* 2. SMOOTH SCROLL (Yumuşak Kaydırma) */
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
@@ -25,7 +25,45 @@ body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.7;
     text-align: center;
+    overflow-x: hidden; /* Gezen kurbağa taşarsa kaydırma çubuğu çıkmasın */
 }
+
+/* --- YENİ EKLENENLER BAŞLANGIÇ --- */
+
+/* 1. Yanıp Sönen İmleç (Cursor) */
+.cursor {
+    color: var(--frog-green);
+    font-weight: 100;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* 2. Ekranda Gezen Kurbağa (Floating Frog) */
+.floating-frog {
+    position: fixed; /* Sayfa kaydırılsa bile ekranda sabit kalır */
+    width: 60px; /* Boyutunu buradan ayarlayabilirsin */
+    height: auto;
+    z-index: 9999; /* Her şeyin üstünde olsun */
+    pointer-events: none; /* Tıklamaları engellemesin */
+    opacity: 0.8; /* Biraz şeffaf olsun ki içeriği kapatmasın */
+    animation: floatAround 20s linear infinite alternate;
+}
+
+/* Kurbağanın gezinme rotası */
+@keyframes floatAround {
+    0%   { top: 5%; left: 5%; transform: rotate(0deg); }
+    25%  { top: 70%; left: 85%; transform: rotate(45deg); }
+    50%  { top: 85%; left: 15%; transform: rotate(90deg); }
+    75%  { top: 15%; left: 75%; transform: rotate(135deg); }
+    100% { top: 5%; left: 5%; transform: rotate(180deg); }
+}
+
+/* --- YENİ EKLENENLER BİTİŞ --- */
+
 
 .container {
     max-width: 800px;
@@ -209,7 +247,7 @@ h2 {
     color: var(--text-gray);
 }
 
-/* 4. RESTART (FROC) SECTION */
+/* RESTART (FROC) SECTION */
 .footer-restart {
     margin-top: 20px;
     padding-bottom: 60px;
@@ -225,13 +263,13 @@ h2 {
 }
 
 .up-gif {
-    max-width: 80px; /* Diğerlerinden daha küçük */
+    max-width: 80px;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .up-gif:hover {
-    transform: translateY(-10px); /* Üzerine gelince zıplar */
+    transform: translateY(-10px);
 }
 
 /* Responsive */
@@ -239,4 +277,5 @@ h2 {
     h1 { font-size: 2.2rem; }
     .story-text { font-size: 1.1rem; }
     .frog-gif { max-width: 80%; }
+    .floating-frog { width: 40px; } /* Mobilde gezen kurbağa daha küçük olsun */
 }
