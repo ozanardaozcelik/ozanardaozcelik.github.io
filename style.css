@@ -1,9 +1,11 @@
-/* GENEL AYARLAR */
+/* AVATAR: THE LAST AIRBENDER TEMASI */
 :root {
-    --bg-color: #f8f9fa; /* Kırık beyaz arka plan */
-    --text-color: #333333; /* Koyu gri metin */
-    --accent-color: #007bff; /* Teknoloji Mavisi Vurgu */
-    --container-width: 900px;
+    --air-nomad-orange: #ff9900; /* Aang'in kıyafeti */
+    --air-nomad-yellow: #f4c430; /* Aang'in kıyafeti detay */
+    --arrow-blue: #87CEEB;       /* Aang'in ok dövmesi */
+    --appa-cream: #fdfbf7;       /* Appa'nın kürk rengi */
+    --text-dark: #2d3436;
+    --bg-overlay: rgba(0, 0, 0, 0.5); /* Görsel üzerindeki karartma */
 }
 
 * {
@@ -13,93 +15,126 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Daha yumuşak, modern font */
+    background-color: var(--appa-cream);
+    color: var(--text-dark);
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: #ffffff;
 }
 
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-h1, h2, h3 {
-    color: #222;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid var(--accent-color);
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--accent-color);
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-.highlight {
-    color: var(--accent-color);
-}
-
-.bg-light {
-    background-color: var(--bg-color);
-}
-
-/* HERO BÖLÜMÜ */
+/* HERO BÖLÜMÜ - DİNAMİK GÖRSEL */
 .hero {
+    /* Senin için bulduğum görseli buraya arka plan olarak ekledim */
+    background-image: url('http://googleusercontent.com/image_collection/image_retrieval/5652197006548857135');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax efekti */
+    color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    background-color: var(--bg-color);
+    padding: 120px 20px;
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--air-nomad-orange);
+    box-shadow: 0 0 20px rgba(135, 206, 235, 0.6); /* Mavi parıltı (Avatar State) */
+    margin-bottom: 20px;
+    object-fit: cover;
+    background-color: #fff;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero .subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 25px;
+.highlight {
+    color: var(--air-nomad-orange);
 }
 
+.quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--arrow-blue);
+    margin-top: 10px;
+}
+
+/* SOSYAL İKONLAR */
 .social-links a {
-    font-size: 1.8rem;
-    margin: 0 15px;
-    color: #555;
+    color: #fff;
+    font-size: 2rem;
+    margin: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: var(--accent-color);
+    color: var(--air-nomad-orange);
+    transform: translateY(-5px); /* Uçma efekti */
 }
 
-/* YETENEKLER */
+/* KUTULAR VE BÖLÜMLER */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+    position: relative;
+}
+
+h2 i {
+    color: var(--air-nomad-orange);
+    margin-right: 10px;
+}
+
+/* YETENEK KARTLARI */
 .skills-grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
 .skill-badge {
-    background-color: #e9ecef;
-    color: #333;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 0.9rem;
+    background: #fff;
+    border: 2px solid var(--arrow-blue);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* PROJELER */
+.skill-badge:hover {
+    background: var(--arrow-blue);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* PROJE KARTLARI */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -108,58 +143,71 @@ a:hover {
 
 .project-card {
     background: #fff;
-    border: 1px solid #eee;
+    border-radius: 15px;
     padding: 25px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--air-nomad-orange);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: var(--accent-color);
+    transform: translateY(-10px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+}
+
+.tag {
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #555;
 }
 
 .project-card p {
     color: #666;
     margin-bottom: 20px;
-    font-size: 0.95rem;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--accent-color);
+    background-color: var(--air-nomad-orange);
     color: white;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.btn.inactive {
-    background-color: #ccc;
-    pointer-events: none;
+    background-color: #e68a00;
 }
 
 /* FOOTER */
 footer {
+    background: var(--text-dark);
+    color: #888;
     text-align: center;
-    background: #333;
-    color: #aaa;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    padding: 30px 0;
+    margin-top: 50px;
 }
 
-/* MOBİL UYUMLULUK (Responsive) */
+footer i {
+    color: red;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.2rem; }
-    .container { padding: 30px 20px; }
+    .hero h1 { font-size: 2rem; }
+    .project-grid { grid-template-columns: 1fr; }
 }
