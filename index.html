@@ -3,54 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozan Arda Özçelik | Portfolyo</title>
-    <meta name="description" content="Ozan Arda Özçelik'in kişisel portfolyo web sitesi ve projeleri.">
+    <title>Ozan Arda Özçelik | Yazılım Geliştirici</title>
+    <meta name="description" content="Ozan Arda Özçelik - Bilgisayar Mühendisliği Öğrencisi ve Yazılım Geliştirici.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="hero">
-        <div class="container">
-            <h1>Merhaba, ben <span class="highlight">Ozan Arda Özçelik</span>.</h1>
-            <p class="subtitle">Yazılım Geliştirme Meraklısı & Öğrenci</p>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <div class="avatar-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Aang_in_The_Last_Airbender_opening.png" alt="Ozan Arda Özçelik" class="profile-pic">
+            </div>
+            <h1>Merhaba, ben <span class="highlight">Ozan Arda Özçelik</span></h1>
+            <p class="subtitle">Computer Engineering Student @ NKU | AI Enthusiast</p>
+            <p class="quote">"Yip Yip! Kodlamaya uçuşa geçiyoruz."</p>
+            
             <div class="social-links">
-                <a href="https://github.com/OzanArdaOzcelik" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="LINKEDIN_PROFIL_LINKIN" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:SENIN_MAIL_ADRESIN" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/ozanardaozcelik" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ozanardaozcelik/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:ozanardaozcelik@example.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </header>
 
     <section id="about" class="container">
-        <h2>Hakkımda</h2>
-        <p>Buraya kendini tanıtan kısa bir yazı yaz. Örneğin: Yazılım dünyasına C dili ile adım attım. Algoritmalar kurmayı ve problem çözmeyi seviyorum. Yeni teknolojiler öğrenmeye açığım ve şu anda [İlgilendiğin Alan] üzerine kendimi geliştiriyorum.</p>
+        <h2><i class="fas fa-water"></i> Hakkımda</h2>
+        <p>Namık Kemal Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Yapay Zeka, Görüntü İşleme ve Python üzerine yoğunlaşıyorum. Şahi Otonom İHA takımında Yazılım Ekip Lideri olarak görev alıyorum ve TEKNOFEST süreçlerinde aktif rol oynuyorum. Alevi türküleri dinlemeyi ve Avatar evrenini keşfetmeyi severim.</p>
     </section>
 
-    <section id="skills" class="container bg-light">
-        <h2>Yetenekler & Araçlar</h2>
+    <section id="skills" class="container">
+        <h2><i class="fas fa-fire"></i> Yetenekler</h2>
         <div class="skills-grid">
-            <span class="skill-badge">C Programming</span>
-            <span class="skill-badge">Git & GitHub</span>
-            <span class="skill-badge">HTML/CSS</span>
-            <span class="skill-badge">Algoritmalar</span>
-            </div>
+            <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+            <span class="skill-badge"><i class="fas fa-eye"></i> Computer Vision</span>
+            <span class="skill-badge"><i class="fas fa-code"></i> C Programming</span>
+            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+        </div>
     </section>
 
     <section id="projects" class="container">
-        <h2>Projelerim</h2>
+        <h2><i class="fas fa-wind"></i> Projelerim</h2>
         <div class="project-grid">
             
             <div class="project-card">
-                <h3>X-O-X Game (C)</h3>
-                <p>C programlama dili ile geliştirilmiş, konsol tabanlı klasik X-O-X oyunu. Matris işlemleri ve oyun algoritması içerir.</p>
-                <a href="https://github.com/OmerAta/X-O-X-Game-" target="_blank" class="btn">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                <div class="card-header">
+                    <h3>🐢 TurtleAimBot</h3>
+                    <span class="tag">Python</span>
+                </div>
+                <p>Reflekslerinizi test eden ve geliştiren eğlenceli bir nişan alma oyunu. Python kullanılarak geliştirildi.</p>
+                <a href="https://github.com/ozanardaozcelik/TurtleAimBot" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="project-card">
-                <h3>Gelecek Projem</h3>
-                <p>Buraya geliştireceğin bir sonraki projeyi veya şu an üzerinde çalıştığın başka bir şeyi ekleyebilirsin.</p>
-                <a href="#" class="btn inactive">Yakında...</a>
+                <div class="card-header">
+                    <h3>🎬 FilmDizi Tracker</h3>
+                    <span class="tag">JSON / Data</span>
+                </div>
+                <p>İzlediğiniz film ve dizileri JSON formatında tutarak takip etmenizi sağlayan kişisel bir kütüphane uygulaması.</p>
+                <a href="https://github.com/ozanardaozcelik/FilmDizi" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header">
+                    <h3>🤖 Employee Loss Analysis</h3>
+                    <span class="tag">AI / ML</span>
+                </div>
+                <p>Çalışanların işten ayrılma nedenlerini analiz eden ve tahminleyen Yapay Zeka modeli projesi.</p>
+                <a href="https://github.com/ozanardaozcelik/EmployeeLoss" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+             <div class="project-card">
+                <div class="card-header">
+                    <h3>✋ Hand Gesture Recognition</h3>
+                    <span class="tag">OpenCV</span>
+                </div>
+                <p>Kameradan alınan görüntü ile parmak sayısını tespit eden görüntü işleme projesi.</p>
+                <a href="https://github.com/ozanardaozcelik" target="_blank" class="btn">Kodu İncele <i class="fas fa-arrow-right"></i></a>
             </div>
 
         </div>
@@ -58,7 +90,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Ozan Arda Özçelik. GitHub Pages ile hazırlanmıştır.</p>
+            <p>© 2026 Ozan Arda Özçelik | Designed with <i class="fas fa-heart"></i> & Airbending</p>
         </div>
     </footer>
 
