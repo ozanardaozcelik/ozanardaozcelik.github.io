@@ -1,161 +1,1725 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Portfolio of Ozan Arda Özçelik, AI Developer and Computer Engineering Student specialized in Python, Machine Learning and Computer Vision.">
-    <meta name="keywords" content="Ozan Arda Özçelik, AI Developer, Computer Engineering, Python, OpenCV, Machine Learning, ŞAHİ Otonom">
-    <meta name="author" content="Ozan Arda Özçelik">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OZAN ARDA — Otonom Sistemler &amp; Makine Mantığı</title>
+  <meta name="description" content="Ozan Arda Özçelik Portfolyosu — Şahi Otonom SİHA Takımı Yazılım Ekip Lideri, Bilgisayarlı Görü, Robotik &amp; Yapay Zeka Mühendisi." />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon-1vzG9E6T.svg" />
 
-    <link rel="icon" href="favicon.png" type="image/png">
-
-    <title>Ozan Arda Özçelik | AI Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Righteous (Display) & DM Mono (Mono) & Chakra Petch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Righteous&display=swap" rel="stylesheet" />
+
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+  <script type="module" crossorigin src="./assets/index-Dae_UkmT.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CqEDHrGh.css">
 </head>
 <body>
 
-    <img src="floating.gif" alt="Floating Frog" class="floating-frog">
+  <!-- =========================================================================
+       THREEUI VOID FIELD PRELOADER (MINIMALIST & TEXTLESS // 60-120FPS RAW WEBGL)
+       ========================================================================= -->
+  <div class="site-preloader" id="sitePreloader" aria-label="Loading">
+    <!-- Void Field Hardware Housing -->
+    <div class="void-housing">
+      <!-- Precision Outer Corner Nodes & Brackets -->
+      <div class="void-node void-node-tl"></div>
+      <div class="void-node void-node-tr"></div>
+      <div class="void-node void-node-bl"></div>
+      <div class="void-node void-node-br"></div>
+      <div class="void-bracket void-bracket-tl"></div>
+      <div class="void-bracket void-bracket-tr"></div>
+      <div class="void-bracket void-bracket-bl"></div>
+      <div class="void-bracket void-bracket-br"></div>
 
+      <!-- Main Screen Stage -->
+      <div class="void-screen">
+        <!-- Raw WebGL Dot Matrix Canvas -->
+        <canvas id="voidMatrixCanvas" class="void-canvas"></canvas>
+        
+        <!-- Subtle Screen Corrugation Overlay -->
+        <div class="void-corrugation"></div>
 
-    <main class="container">
+        <!-- Faint Geometric Wireframe -->
+        <svg class="void-wireframe" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M400 50 L550 150 L550 350 L400 450 L250 350 L250 150 Z" stroke="currentColor" stroke-width="1.5"></path>
+          <path d="M400 50 L400 250 M250 150 L400 250 M550 150 L400 250 M400 450 L400 250 M250 350 L400 250 M550 350 L400 250" stroke="currentColor" stroke-width="0.8" opacity="0.6"></path>
+          <circle cx="550" cy="150" r="32" stroke="currentColor" stroke-width="1.2"></circle>
+        </svg>
 
-        <section class="story-section" id="intro">
-            <img src="hello.gif" alt="Hello Frog" class="frog-gif main-gif">
-            <h1>Hello! I'm <span class="highlight" id="typing-text"></span><span class="cursor" id="typed-cursor">|</span></h1>
-        </section>
-
-        <section class="story-section">
-            <img src="pc.gif" alt="PC Passion" class="frog-gif">
-            <p class="story-text">
-                I chose this department because of the interest I've had in computers since I was a child. I genuinely love my job and what I do.
-            </p>
-        </section>
-
-        <section class="story-section">
-            <img src="itsme.gif" alt="It's Me" class="frog-gif">
-            <p class="story-text">
-                To introduce myself a bit more: I am a 4h-year Computer Engineering student at Tekirdağ Namık Kemal University and the Software Team Lead of the <strong class="green-text">ŞAHİ Otonom UAV (SİHA) Team</strong>.
-            </p>
-        </section>
-
-        <section class="story-section">
-            <img src="teamlead.gif" alt="Team Lead" class="frog-gif">
-            <p class="story-text">
-                I am frequently involved in the management side of school projects. I love taking responsibility and I consider myself a realistic individual.
-            </p>
-        </section>
-
-        <section class="story-section">
-            <img src="proj.gif" alt="Projects and Skills" class="frog-gif">
-            
-            <h2>My Tech Stack</h2>
-            <div class="skills-container">
-                <span class="skill-tag">Python 🐍</span>
-                <span class="skill-tag">Machine Learning 🤖</span>
-                <span class="skill-tag">Image Processing 👁️</span>
-                <span class="skill-tag">OpenCV 🎥</span>
+        <!-- Minimal Clean HUD (Textless & Clean) -->
+        <div class="void-hud">
+          <div class="void-hud-top">
+            <span class="void-pill"></span>
+            <span class="void-code">042</span>
+          </div>
+          <div class="void-hud-bottom">
+            <div class="void-counter-wrap">
+              <span class="void-num" id="voidNum">0</span>
+              <span class="void-unit">%</span>
             </div>
-        </section>
-
-        <section class="story-section projects-section">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>TensileForge</h3>
-                    <p>Material analysis and simulation tool.</p>
-                    <a href="https://github.com/ozanardaozcelik/TensileForge" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Comp2laintBox</h3>
-                    <p>Digital complaint and feedback management system.</p>
-                    <a href="https://github.com/ozanardaozcelik/Comp2laintBox" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>EmployeeLoss</h3>
-                    <p>AI model predicting employee attrition using Machine Learning.</p>
-                    <a href="https://github.com/ozanardaozcelik/EmployeeLoss" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>MovieNSeriesNSitcom</h3>
-                    <p>Personal tracker for movies, series, and sitcoms.</p>
-                    <a href="https://github.com/ozanardaozcelik/MovieNSeriesNSitcom" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>TurtleAimBot</h3>
-                    <p>A reflex training game developed with Python.</p>
-                    <a href="https://github.com/ozanardaozcelik/TurtleAimBot" target="_blank" class="btn">View on GitHub</a>
-                </div>
-                <div class="project-card coming-soon">
-                    <h3>HandDetector</h3>
-                    <p>Real-time hand gesture recognition (Work in Progress).</p>
-                    <span class="btn disabled">Coming Soon...</span>
-                </div>
+            <div class="void-progress-track">
+              <div class="void-progress-bar" id="voidProgressBar"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <section class="story-section">
-            <img src="mail.gif" alt="Contact Frog" class="frog-gif">
-            <h2>Let's Connect</h2>
-            <p class="story-text">
-                Feel free to verify my profile or reach out to say hi!
-            </p>
-            <div class="button-group">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ozan.a.ozcelik@gmail.com" target="_blank" class="btn btn-contact mail-btn">
-                    <i class="fas fa-envelope"></i> Send Email
-                </a>
-                <a href="https://www.linkedin.com/in/ozanardaozcelik/" target="_blank" class="btn btn-contact linkedin-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+  <!-- FIXED TOPOGRAPHIC CONTOUR SVG -->
+  <svg class="contour-bg" viewBox="0 0 1600 1000" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-50,60 C350,110 750,20 1200,90 C1450,130 1550,40 1650,70" />
+    <path d="M-50,130 C300,190 800,80 1150,160 C1400,210 1520,110 1650,140" />
+    <path d="M-50,200 C380,260 720,150 1250,230 C1480,270 1560,180 1650,210" />
+    <path d="M-50,270 C280,330 850,210 1180,300 C1420,350 1530,250 1650,280" />
+    <path d="M-50,340 C340,400 780,280 1220,370 C1460,420 1570,320 1650,350" />
+    <path d="M-50,410 C260,470 820,350 1160,440 C1390,490 1510,390 1650,420" />
+    <path d="M-50,480 C360,540 760,420 1240,510 C1470,560 1580,460 1650,490" />
+    <path d="M-50,550 C310,610 840,490 1190,580 C1430,630 1540,530 1650,560" />
+    <path d="M-50,620 C290,680 790,560 1230,650 C1450,700 1560,600 1650,630" />
+    <path d="M-50,690 C370,750 740,630 1170,720 C1410,770 1520,670 1650,700" />
+    <path d="M-50,760 C330,820 860,700 1260,790 C1480,840 1570,740 1650,770" />
+    <path d="M-50,830 C270,890 810,770 1210,860 C1440,910 1550,810 1650,840" />
+    <path d="M-50,900 C350,960 770,840 1180,930 C1420,980 1530,880 1650,910" />
+    <path d="M-50,970 C300,1030 830,910 1240,1000 C1460,1050 1580,950 1650,980" />
+  </svg>
+
+  <!-- CINEMATIC 3D OPTICAL LENS & LIFE STORY PLATES VORTEX TRANSITION OVERLAY -->
+  <div class="film-dive-overlay" id="filmDiveOverlay" aria-hidden="true">
+    <div class="film-warp-lines"></div>
+
+    <!-- Optical Lens Barrel Rig -->
+    <div class="lens-barrel-rig">
+      <div class="lens-ring-outer"></div>
+      <div class="lens-ring-inner"></div>
+      <div class="lens-aperture-iris"></div>
+    </div>
+
+    <div class="film-dive-viewport">
+      <div class="film-dive-scene" id="filmDiveScene">
+        
+        <!-- 3D Scattered Life Story Photo Plates (Flowing from Left, Right, Top, Bottom) -->
+        <div class="story-flight-matrix">
+
+          <!-- Plate 1: 3 Yaş İlk Bilgisayar (Top-Left) -->
+          <div class="story-fly-plate story-plate-1">
+            <div class="plate-sprocket">
+              <span>2008 // KODAK 500T</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#01</span>
             </div>
-        </section>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/marina-bay-sands.png" alt="İlk Bilgisayar" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">3 YAŞ: İLK BİLGİSAYAR &amp; XP</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>DIGITAL AWAKENING</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -550M</span>
+            </div>
+          </div>
 
-        <section class="story-section">
-            <img src="sik.gif" alt="Stylish Frog" class="frog-gif">
-            <p class="story-text large-text">
-                Now you know me. This is who I am. I am constantly developing myself and I love being a part of this tech world.
-            </p>
-        </section>
+          <!-- Plate 2: Kırımlı Fazilet Olcay Lisesi (Top-Right) -->
+          <div class="story-plate-2 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>LİSE YILLARI // 35MM</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#02</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/gardens-by-the-bay.png" alt="Lise Yılları" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">KIRIMLI FAZİLET OLCAY A.L.</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>MAKİNE MERAKI</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -800M</span>
+            </div>
+          </div>
 
-        <section class="story-section final-section">
-            <img src="out.gif" alt="Outro" class="frog-gif">
-            <p class="thanks-text">
-                Special thanks to <strong class="green-text">Frog Fric</strong> for helping me introduce myself! 🐸💚
-            </p>
-        </section>
+          <!-- Plate 3: Namık Kemal Üniversitesi (Bottom-Left) -->
+          <div class="story-plate-3 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>MÜHENDİSLİK // YÜKSEK ONUR</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#03</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/merlion.png" alt="Bilgisayar Mühendisliği" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">BİLGİSAYAR MÜHENDİSLİĞİ</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>HIGH HONORS DEGREE</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -950M</span>
+            </div>
+          </div>
 
-        <div class="footer-restart">
-            <p class="restart-text">If you want to read again, you can click Froc!</p>
-            <a href="#intro">
-                <img src="up.gif" alt="Go to Top" class="frog-gif up-gif">
-            </a>
+          <!-- Plate 4: Martur Fompak AI (Bottom-Right) -->
+          <div class="story-plate-4 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>KURUMSAL // LLM AJANLARI</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#04</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/buddha-tooth.png" alt="Martur AI" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">MARTUR FOMPAK AI AJANLARI</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>RAG ORCHESTRATION</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -480M</span>
+            </div>
+          </div>
+
+          <!-- Plate 5: Şahi Otonom SİHA Takımı & Simülasyon (Mid-Left Highlight) -->
+          <div class="story-plate-6 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>TEKNOFEST // SAVAŞAN İHA</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#05 ★</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/lau-pa-sat.png" alt="Şahi SİHA" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">ŞAHİ OTONOM SİHA &amp; SİMÜLASYON</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>YOLOV8 + ROS 2 + GAZEBO</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -680M</span>
+            </div>
+          </div>
+
+          <!-- Plate 6: Çözüm Makina ISEE Vision (Mid-Right) -->
+          <div class="story-plate-7 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>ENDÜSTRİYEL GÖRÜ // CUDA</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#06</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/marina-bay-skyline.png" alt="ISEE Vision" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">ÇÖZÜM MAKİNA: ISEE VISION</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>MICRON ACCURACY CV</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -900M</span>
+            </div>
+          </div>
+
+          <!-- Plate 7: Çözüm Makina ISEE Robotics (Far Bottom-Center) -->
+          <div class="story-plate-8 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>ROBOTİK // ROS &amp; MQTT</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#07</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/singapore-river.png" alt="ISEE Robotics" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">ÇÖZÜM MAKİNA: ISEE ROBOTICS</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>INDUSTRIAL AUTOMATION</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -1150M</span>
+            </div>
+          </div>
+
+          <!-- Plate 8: İnsan Formu — Makine Mantığı (Deep Focal Core) -->
+          <div class="story-plate-9 story-fly-plate">
+            <div class="plate-sprocket">
+              <span>MANIFESTO // SÜRÜ ZEKA</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>#08</span>
+            </div>
+            <div class="plate-photo-wrap">
+              <img src="./landing-pages/meng-to-sketchbook/botanic-gardens.png" alt="Makine Mantığı" class="plate-photo-img" loading="eager" />
+              <div class="plate-photo-overlay">
+                <span class="plate-title-tag">İNSAN FORMU — MAKİNE MANTIĞI</span>
+              </div>
+            </div>
+            <div class="plate-sprocket bot">
+              <span>AUTONOMOUS FUTURE</span>
+              <div class="plate-sprocket-holes"><div class="p-hole"></div><div class="p-hole"></div><div class="p-hole"></div></div>
+              <span>DEPTH: -1450M</span>
+            </div>
+          </div>
+
         </div>
 
-    </main>
+        <!-- Central Focal Target Card in Lens Reticle -->
+        <div class="central-target-aperture">
+          <div class="film-target-card" id="filmTargetCard">
+            <div class="film-target-tag">
+              <span class="film-dive-dot"></span>
+              <span id="filmTargetTag">REEL SCENE // 02</span>
+            </div>
+            <h3 class="film-target-title" id="filmTargetTitle">02 HİKAYEM</h3>
+            <div class="film-target-sub" id="filmTargetSub">FRAME: #0180 · 3D TACTILE SKETCHBOOK</div>
+          </div>
+        </div>
 
-    <script>
-        const textToType = "Ozan Arda Özçelik.";
-        const typingElement = document.getElementById('typing-text');
-        const cursorElement = document.getElementById('typed-cursor');
-        let charIndex = 0;
+      </div>
+    </div>
 
-        function typeWriter() {
-            if (charIndex < textToType.length) {
-                typingElement.innerHTML += textToType.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeWriter, 100); 
-            } else {
-                // YAZMA BİTTİ, imleci gizle
-                cursorElement.classList.add('typing-done');
-            }
+    <!-- Anamorphic Lens Flare & Shutter Flash -->
+    <div class="film-dive-flash"></div>
+    <div class="anamorphic-streak"></div>
+    <div class="film-dive-vignette"></div>
+  </div>
+
+  <!-- NAVIGATION BAR: 5-SECTION SWITCHER -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <a href="#heroHome" class="nav-brand" onclick="window.__navigateToHome ? window.__navigateToHome() : (window.__scrollToHome &amp;&amp; window.__scrollToHome()); return false;">OZAN ARDA</a>
+
+    <!-- 5-PILL VIEW SELECTOR -->
+    <div class="nav-view-switcher" id="sectionNavSwitcher">
+      <button type="button" class="view-switch-pill is-active" id="btnNavHome" title="01 Ana Sayfa">
+        <span class="view-switch-dot"></span>
+        <span><span class="lang-tr">01 Ana Sayfa</span><span class="lang-en">01 Home</span></span>
+      </button>
+      <button type="button" class="view-switch-pill" id="btnNavStory" title="02 Hikayem (3D Eskiz Defteri)">
+        <span class="view-switch-dot"></span>
+        <span><span class="lang-tr">02 Hikayem</span><span class="lang-en">02 Story</span></span>
+      </button>
+      <button type="button" class="view-switch-pill" id="btnNavSkills" title="03 Yeteneklerim (3D Kitaplık)">
+        <span class="view-switch-dot"></span>
+        <span><span class="lang-tr">03 Yeteneklerim</span><span class="lang-en">03 Capabilities</span></span>
+      </button>
+      <button type="button" class="view-switch-pill" id="btnNavProjects" title="04 Projelerim (GitHub &amp; Ar-Ge)">
+        <span class="view-switch-dot"></span>
+        <span><span class="lang-tr">04 Projelerim</span><span class="lang-en">04 Projects</span></span>
+      </button>
+      <button type="button" class="view-switch-pill" id="btnNavContact" title="05 İletişim">
+        <span class="view-switch-dot"></span>
+        <span><span class="lang-tr">05 İletişim</span><span class="lang-en">05 Contact</span></span>
+      </button>
+    </div>
+
+    <div class="nav-actions">
+      <button class="nav-lang-btn" id="lang-toggle-btn" aria-label="Dili Değiştir / Switch Language">
+        <span class="lang-tr">EN</span>
+        <span class="lang-en">TR</span>
+      </button>
+      <button class="nav-index-btn" id="menu-toggle-btn" aria-expanded="false" aria-controls="site-menu-panel">
+        <span>Index</span>
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SLIDE-DOWN FULLSCREEN MENU PANEL (5 SECTIONS) -->
+  <div class="site-menu" id="site-menu-panel" aria-hidden="true">
+    <ul class="menu-nav-list">
+      <li class="menu-nav-item">
+        <a href="#heroHome" class="menu-nav-link" id="menu-link-home">
+          <span class="menu-num">01</span>
+          <span><span class="lang-tr">01 / Ana Sayfa (Portre &amp; Otonom Robotik)</span><span class="lang-en">01 / Home (Portrait &amp; Robotics)</span></span>
+        </a>
+      </li>
+      <li class="menu-nav-item">
+        <a href="#heroScrollFlow" class="menu-nav-link" id="menu-link-story">
+          <span class="menu-num">02</span>
+          <span><span class="lang-tr">02 / Hikayem (3D Eskiz Defteri)</span><span class="lang-en">02 / My Story (3D Sketchbook)</span></span>
+        </a>
+      </li>
+      <li class="menu-nav-item">
+        <a href="#heroScrollFlow" class="menu-nav-link" id="menu-link-skills">
+          <span class="menu-num">03</span>
+          <span><span class="lang-tr">03 / Yeteneklerim (3D Kitaplık)</span><span class="lang-en">03 / Capabilities (3D Shelf)</span></span>
+        </a>
+      </li>
+      <li class="menu-nav-item">
+        <a href="#projects-section" class="menu-nav-link" id="menu-link-projects">
+          <span class="menu-num">04</span>
+          <span><span class="lang-tr">04 / Projelerim (GitHub &amp; Ar-Ge)</span><span class="lang-en">04 / Projects (GitHub &amp; R&amp;D)</span></span>
+        </a>
+      </li>
+      <li class="menu-nav-item">
+        <a href="#contact" class="menu-nav-link" id="menu-link-contact">
+          <span class="menu-num">05</span>
+          <span><span class="lang-tr">05 / İletişim &amp; Görev Talebi</span><span class="lang-en">05 / Commission &amp; Contact</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- =========================================================================
+       01 ANA SAYFA: INTERACTIVE FLUID PORTRAIT & ROBOT REVEAL HERO
+       ========================================================================= -->
+  <section class="hero-home" id="heroHome">
+    <!-- WebGL Fluid Canvas Background (reveals robot on mouse movement) -->
+    <div class="hero-home-canvas-wrap">
+      <canvas id="hero-fluid-canvas"></canvas>
+    </div>
+
+    <!-- Editorial Foreground Overlay -->
+    <div class="hero-home-overlay">
+      <div class="hero-home-container">
+        <div class="hero-home-left">
+          <div class="hero-home-badge">
+            <span class="dot-live"></span>
+            <span class="lang-tr">ÇEVRİMİÇİ // BİLGİSAYAR MÜHENDİSİ</span>
+            <span class="lang-en">ONLINE // COMPUTER ENGINEER</span>
+          </div>
+
+          <h1 class="hero-home-title">
+            <span>OZAN ARDA</span>
+            <span class="title-outline">ÖZÇELİK<em>.</em></span>
+          </h1>
+
+          <p class="hero-home-desc">
+            <span class="lang-tr">Bilgisayarlı görü ve yapay zeka mimarilerine odaklanan bir Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Nesne tespiti, anomali tespiti ve OCR tabanlı görüntü işleme modelleri geliştiriyor, bunları gömülü donanımlarda gerçek zamanlı çalışacak şekilde optimize ediyorum. Bu çözümleri endüstriyel kalite kontrol süreçlerine ve ROS 2/Gazebo destekli otonom robotik sistemlere entegre ederek uygulanabilir yazılım çözümleri üretiyorum.</span>
+            <span class="lang-en">I am a senior Computer Engineering student focused on computer vision and artificial intelligence architectures. I develop object detection, anomaly detection, and OCR-based image processing models, optimizing them to run in real-time on embedded hardware. I produce applicable software solutions by integrating these solutions into industrial quality control processes and ROS 2/Gazebo-supported autonomous robotic systems.</span>
+          </p>
+
+          <div class="hero-home-actions">
+            <button type="button" class="hero-cta-btn" id="btnExploreStory">
+              <span><span class="lang-tr">HİKAYEM İÇİN AŞAĞI KAYDIRIN</span><span class="lang-en">SCROLL DOWN FOR MY STORY</span></span>
+              <span class="hero-cta-arrow">↓</span>
+            </button>
+            <span class="hero-interactive-hint">
+              <span class="lang-tr">✦ Portre üzerinde mouse'u gezdirerek geleceği keşfedin</span>
+              <span class="lang-en">✦ Hover over portrait to discover the future</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       02 HİKAYEM (3D ESKİZ DEFTERİ) -> COMFORTABLE BUFFER -> 3D FOLD -> 03 YETENEKLERİM (3D KİTAPLIK)
+       ========================================================================= -->
+  <div class="hero-scroll-flow" id="heroScrollFlow">
+    <div class="hero-sticky-viewport" id="heroStickyViewport">
+      
+      <!-- LAYER 1: 03 YETENEKLERİM 3D SHELF IFRAME (Lazy loaded for instant page load) -->
+      <div class="flow-layer flow-shelf-layer" id="flowShelfLayer" style="visibility: hidden; opacity: 0;">
+        <iframe
+          id="shelf-interactive-frame"
+          class="flow-iframe"
+          data-src="./landing-pages/skills-shelf.html"
+          src="about:blank"
+          title="Ozan Arda Özçelik — 03 Yeteneklerim &amp; Çalışma Kitaplığı"
+          sandbox="allow-downloads allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+          loading="lazy"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+
+      <!-- LAYER 2: 3D DOCKING BOOK (Clean blank paper spread matching active sketchbook) -->
+      <div class="flow-layer flow-3d-book-layer" id="flow3dBookLayer">
+        <div class="scroll-dock-book" id="scrollDockBook">
+          <!-- Realistic drop shadows matching active sketchbook -->
+          <div class="sdb-cast sdb-cast-ambient"></div>
+          <div class="sdb-cast sdb-cast-contact"></div>
+
+          <!-- Spine -->
+          <div class="sdb-spine">
+            <span>00 · HİKAYEM</span>
+          </div>
+
+          <!-- Left Wing (Back cover / left spread) -->
+          <div class="sdb-wing sdb-left" id="sdbWingLeft">
+            <div class="sdb-face sdb-paper"></div>
+            <div class="sdb-face sdb-back-cover">
+              <div class="sdb-cover-foil">
+                <div class="sdb-roman">✦</div>
+                <div>
+                  <div class="sdb-title">OZAN ARDA</div>
+                  <div class="sdb-sub"><span class="lang-tr">MAKİNE MANTIĞI</span><span class="lang-en">MACHINE LOGIC</span></div>
+                </div>
+                <div class="sdb-meta">2026 EDITION</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Wing (Front cover that folds shut over the book) -->
+          <div class="sdb-wing sdb-right" id="sdbWingRight">
+            <div class="sdb-face sdb-paper"></div>
+            <div class="sdb-face sdb-front-cover">
+              <div class="sdb-cover-foil">
+                <div class="sdb-roman">0</div>
+                <div>
+                  <div class="sdb-title"><span class="lang-tr">HİKAYEM</span><span class="lang-en">MY STORY</span></div>
+                  <div class="sdb-sub">OZAN ARDA ÖZÇELİK</div>
+                </div>
+                <div class="sdb-rule"></div>
+                <div class="sdb-meta"><span class="lang-tr">VOL. 00 // 8 DÖNÜM NOKTASI</span><span class="lang-en">VOL. 00 // 8 MILESTONES</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAYER 3: 02 HİKAYEM (ORIGINAL 3D MENG-TO SKETCHBOOK - Lazy loaded for instant initial page speed) -->
+      <div class="flow-layer flow-story-layer" id="flowStoryLayer">
+        <iframe
+          id="sketchbook-interactive-frame"
+          class="flow-iframe"
+          data-src="./landing-pages/meng-to-sketchbook.html"
+          src="about:blank"
+          title="Ozan Arda Özçelik — 02 Hikayem (3D Dokunsal Eskiz Defteri)"
+          sandbox="allow-downloads allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+          loading="lazy"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- [0] MARQUEE STRIP -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>OZAN ARDA ÖZÇELİK</span>
+          <span class="marquee-bullet">•</span>
+          <span><span class="lang-tr">BİLGİSAYAR MÜHENDİSİ</span><span class="lang-en">COMPUTER ENGINEER</span></span>
+          <span class="marquee-bullet">•</span>
+          <span>PORTFOLIO 2025 / 2026</span>
+          <span class="marquee-bullet">•</span>
+          <span><span class="lang-tr">İNSAN FORMU — MAKİNE MANTIĞI</span><span class="lang-en">HUMAN FORM — MACHINE LOGIC</span></span>
+          <span class="marquee-bullet">•</span>
+          <span>AUTONOMOUS UAV SOFTWARE LEAD</span>
+          <span class="marquee-bullet">•</span>
+          <span>COMPUTER VISION (OPENCV, YOLO)</span>
+          <span class="marquee-bullet">•</span>
+          <span>ROS 2 &amp; GAZEBO HARMONIC</span>
+          <span class="marquee-bullet">•</span>
+          <span>ENTERPRISE MULTI-AGENT AI</span>
+          <span class="marquee-bullet">•</span>
+        </div>
+      </div>
+    </div>
+
+        <!-- [04] 04 PROJELERİM & UZMANLIK ALANLARI -->
+    <section class="section projects-section" id="projects-section" data-reveal>
+      <div class="section-head">
+        <div>
+          <span class="section-folio"><span class="lang-tr">04 / KOD &amp; AR-GE ARŞİVİ</span><span class="lang-en">04 / CODE &amp; R&amp;D REPOSITORY</span></span>
+          <h2 class="section-title"><span class="lang-tr">PROJELERİM</span><span class="lang-en">PROJECTS</span></h2>
+        </div>
+        <div class="section-badge">
+          <span class="dot-live"></span>
+          <span><span class="lang-tr">6 Ana Uzmanlık Alanı · Gerçek Projeler</span><span class="lang-en">6 Core Domains · Real Projects</span></span>
+        </div>
+      </div>
+
+      <!-- UNIFIED DUAL-PANE WORKSPACE: LEFT EXPANDED PROJECTS // RIGHT TOPIC STREAM -->
+      <div class="projects-unified-wrapper">
+        
+        <!-- LEFT COLUMN: Selected Topic Active Projects Display -->
+        <div class="projects-display-pane" id="projectsDisplayPane">
+          <div class="display-pane-header">
+            <div class="dph-top-bar">
+              <span class="dph-badge" id="dphBadge">HAVACILIK // SAVAŞAN İHA OTONOMİSİ</span>
+              <span class="dph-count" id="dphCount">2 PROJE</span>
+            </div>
+            <h3 class="dph-title" id="dphTitle">Havacılık &amp; Savaşan SİHA Muharebe Otonomisi</h3>
+            <p class="dph-desc" id="dphDesc">TEKNOFEST Savaşan İHA Yarışması kapsamında yüksek hızlı hava-hava muharebe senaryolarında gerçek zamanlı YOLOv8 nesne tespiti, ByteTrack takip, ArduPilot &amp; MAVLink otonom güdüm entegrasyonu ve kamikaze dalış mimarileri.</p>
+          </div>
+
+          <!-- Dynamic Projects Deck -->
+          <div class="projects-cards-deck" id="projectsCardsDeck">
+            <!-- Injected via JavaScript based on selected topic -->
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: 3D Rotating Stream of Topic Headings (Three.js Helical Waterfall) -->
+        <div class="projects-topics-stream-wrap">
+          <div class="topics-stream-header">
+            <div class="tsh-badge">
+              <span class="tsh-dot"></span>
+              <span class="lang-tr">3D DÖNEN KONU BAŞLIKLARI</span>
+              <span class="lang-en">3D TOPIC STREAM</span>
+            </div>
+            <span class="tsh-hint"><span class="lang-tr">✦ Tıklayarak Seçin &amp; Döndürün</span><span class="lang-en">✦ Click to Select &amp; Drag</span></span>
+          </div>
+
+          <div class="topics-3d-stage-container" id="topics3dContainer">
+            <canvas id="topics-3d-canvas" class="topics-3d-canvas"></canvas>
+            <div class="topics-3d-hint-pill">
+              <span class="t3d-pulse"></span>
+              <span class="lang-tr">DÖNEN 3D AKIŞ // TIKLA &amp; İNCELE</span>
+              <span class="lang-en">ROTATING 3D STREAM // CLICK &amp; INSPECT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- [05] 05 İLETİŞİM (THREEUI WOVEN CLOTH · WASHI NOREN) -->
+    <section class="section contact-section" id="contact" data-reveal>
+      <div class="contact-washi-experience">
+        <!-- 3-Flama Washi Noren Interactive Frame -->
+        <div class="washi-stage-container">
+          <iframe
+            id="wovenClothFrame"
+            src="./landing-pages/woven-cloth-washi.html"
+            title="Woven Cloth - Washi Noren (LinkedIn, Email, GitHub)"
+            loading="lazy"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope"
+            tabindex="0"
+          ></iframe>
+        </div>
+
+        <!-- Sleek Minimal Bottom Status Bar (Location, Status) -->
+        <div class="contact-minimal-footer">
+          <div class="cmf-item">
+            <span class="cmf-label"><span class="lang-tr">KONUM</span><span class="lang-en">LOCATION</span></span>
+            <span class="cmf-value">İstanbul &amp; Tekirdağ, Türkiye</span>
+          </div>
+          <div class="cmf-divider"></div>
+          <div class="cmf-item">
+            <span class="cmf-label"><span class="lang-tr">DURUM</span><span class="lang-en">STATUS</span></span>
+            <span class="cmf-value status-active">
+              <span class="cmf-dot"></span>
+              <span class="lang-tr">Yeni Fırsatlara &amp; Projelere Açık</span><span class="lang-en">Available for Opportunities</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <!-- Three.js ESM Application Entry for Hero Fluid Robot Reveal -->
+
+  <!-- UNIFIED MASTER INTERACTIVE SCRIPT -->
+  <script>
+    (function () {
+      'use strict';
+      
+      // Force return to top / home section on refresh
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      window.scrollTo(0, 0);
+
+      window.addEventListener('beforeunload', function () {
+        window.scrollTo(0, 0);
+      });
+
+      window.addEventListener('load', function () {
+        window.scrollTo(0, 0);
+        if (window.location.hash) {
+          history.replaceState(null, '', window.location.pathname);
+        }
+      });
+
+      // 1. Language Toggle Logic
+      const langBtn = document.getElementById('lang-toggle-btn');
+      let currentLang = localStorage.getItem('site_lang') || 'tr';
+
+      const shelfIframe = document.getElementById('shelf-interactive-frame');
+      const sbIframe = document.getElementById('sketchbook-interactive-frame');
+      const wovenClothFrame = document.getElementById('wovenClothFrame');
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        localStorage.setItem('site_lang', lang);
+
+        if (typeof window.__renderCurrentTopic === 'function') {
+          window.__renderCurrentTopic();
         }
 
-        window.onload = function() {
-            setTimeout(typeWriter, 1000);
-        };
-    </script>
+        if (typeof window.__updateTopics3DLang === 'function') {
+          window.__updateTopics3DLang(lang);
+        }
 
+        [shelfIframe, sbIframe, wovenClothFrame].forEach(iframe => {
+          if (iframe && iframe.contentWindow) {
+            try {
+              iframe.contentWindow.postMessage({ type: 'SET_LANG', lang: lang }, '*');
+            } catch (e) {}
+          }
+        });
+      }
+
+      setLanguage(currentLang);
+
+      [shelfIframe, sbIframe, wovenClothFrame].forEach(iframe => {
+        if (iframe) {
+          iframe.addEventListener('load', () => {
+            if (iframe.contentWindow) {
+              try {
+                iframe.contentWindow.postMessage({ type: 'SET_LANG', lang: currentLang }, '*');
+              } catch (e) {}
+            }
+          });
+        }
+      });
+
+      if (langBtn) {
+        langBtn.addEventListener('click', () => {
+          setLanguage(currentLang === 'tr' ? 'en' : 'tr');
+        });
+      }
+
+
+
+      // 2. Pure Scroll-Driven Transition (02 Hikayem -> Reading Zone -> 3D Fold -> 03 Yeteneklerim)
+      const heroHomeSec = document.getElementById('heroHome');
+      const flowContainer = document.getElementById('heroScrollFlow');
+      const flowStoryLayer = document.getElementById('flowStoryLayer');
+      const flowShelfLayer = document.getElementById('flowShelfLayer');
+      const flow3dBookLayer = document.getElementById('flow3dBookLayer');
+      const sdbWingRight = document.getElementById('sdbWingRight');
+      const scrollDockBook = document.getElementById('scrollDockBook');
+
+      const btnNavHome = document.getElementById('btnNavHome');
+      const btnNavStory = document.getElementById('btnNavStory');
+      const btnNavSkills = document.getElementById('btnNavSkills');
+      const btnNavProjects = document.getElementById('btnNavProjects');
+      const btnNavContact = document.getElementById('btnNavContact');
+      const projectsSec = document.getElementById('projects-section');
+      const contactSec = document.getElementById('contact');
+
+      // Helper to calculate true document-relative Y — cached to prevent layout thrashing
+      let _cachedOffsets = {};
+      function getDocTop(el) {
+        if (!el) return 999999;
+        return _cachedOffsets[el.id] || _computeDocTop(el);
+      }
+      function _computeDocTop(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top + window.scrollY;
+      }
+      function _recacheOffsets() {
+        [flowContainer, projectsSec, contactSec].forEach(el => {
+          if (el && el.id) _cachedOffsets[el.id] = _computeDocTop(el);
+        });
+      }
+      _recacheOffsets();
+      window.addEventListener('resize', _recacheOffsets, { passive: true });
+
+      function smoothstep(t) {
+        const x = Math.max(0, Math.min(1, t));
+        return x * x * (3 - 2 * x);
+      }
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function getSnapTargets() {
+        const winH = window.innerHeight;
+        const flowTop = getDocTop(flowContainer);
+        const flowH = flowContainer ? flowContainer.offsetHeight : winH;
+        const shelfY = Math.max(0, flowTop + flowH - winH);
+        const storyY = flowTop + 2;
+        const homeY = 0;
+        const projectsY = projectsSec ? Math.max(0, getDocTop(projectsSec) - 60) : shelfY + winH;
+        const contactY = contactSec ? Math.max(0, getDocTop(contactSec) - 60) : projectsY + winH;
+        return { homeY, storyY, shelfY, projectsY, contactY, flowTop, flowH, winH };
+      }
+
+      let isAutoScrolling = false;
+      let autoScrollAnimId = null;
+
+      function customSmoothScrollTo(targetY, duration, onComplete) {
+        if (autoScrollAnimId) {
+          cancelAnimationFrame(autoScrollAnimId);
+          autoScrollAnimId = null;
+        }
+
+        const startY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const diff = targetY - startY;
+        if (Math.abs(diff) < 2) {
+          window.scrollTo({ top: targetY, behavior: 'auto' });
+          isAutoScrolling = false;
+          if (typeof onComplete === 'function') onComplete();
+          return;
+        }
+
+        isAutoScrolling = true;
+        const startTime = performance.now();
+        // Luxurious, cinematic 4-5x slower duration (1400ms - 1900ms)
+        const actualDuration = duration || Math.min(1900, Math.max(1350, Math.abs(diff) * 1.15));
+
+        function step(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(1, elapsed / actualDuration);
+          const eased = easeInOutCubic(progress);
+          const currentY = startY + diff * eased;
+
+          window.scrollTo({ top: currentY, behavior: 'auto' });
+          onScrollHeroFlow();
+
+          if (progress < 1) {
+            autoScrollAnimId = requestAnimationFrame(step);
+          } else {
+            window.scrollTo({ top: targetY, behavior: 'auto' });
+            onScrollHeroFlow();
+            autoScrollAnimId = null;
+            setTimeout(() => {
+              isAutoScrolling = false;
+              if (typeof onComplete === 'function') onComplete();
+            }, 80);
+          }
+        }
+
+        autoScrollAnimId = requestAnimationFrame(step);
+      }
+
+      let storyLoaded = false;
+      function ensureStoryLoaded() {
+        if (storyLoaded || !sbIframe) return;
+        const dSrc = sbIframe.getAttribute('data-src');
+        if (dSrc && (!sbIframe.src || sbIframe.src === 'about:blank' || !sbIframe.src.includes('meng-to-sketchbook'))) {
+          sbIframe.src = dSrc;
+          storyLoaded = true;
+        }
+      }
+
+      let isShelfActive = false;
+      let shelfLoaded = false;
+
+      function ensureShelfLoaded() {
+        if (shelfLoaded || !shelfIframe) return;
+        const dSrc = shelfIframe.getAttribute('data-src');
+        if (dSrc && (!shelfIframe.src || shelfIframe.src === 'about:blank' || !shelfIframe.src.includes('skills-shelf'))) {
+          shelfIframe.src = dSrc;
+          shelfLoaded = true;
+        }
+      }
+
+      function setShelfActiveState(active) {
+        if (isShelfActive === active) return;
+        isShelfActive = active;
+        if (active) ensureShelfLoaded();
+        if (shelfIframe && shelfIframe.contentWindow) {
+          try {
+            shelfIframe.contentWindow.postMessage({ type: active ? 'RESUME_WEBGL' : 'SUSPEND_WEBGL' }, '*');
+          } catch (e) {}
+        }
+      }
+
+      // Preload story iframe when flowContainer is near viewport, and preload shelf on idle
+      if (flowContainer && 'IntersectionObserver' in window) {
+        const flowObserver = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting) {
+            flowObserver.disconnect();
+            ensureStoryLoaded();
+            if ('requestIdleCallback' in window) {
+              requestIdleCallback(() => ensureShelfLoaded(), { timeout: 2000 });
+            } else {
+              setTimeout(ensureShelfLoaded, 1200);
+            }
+          }
+        }, { rootMargin: '300px' });
+        flowObserver.observe(flowContainer);
+      }
+
+      // Scroll Handler with Generous Dedicated Reading Buffer & Cinematic Pacing
+      let lastRenderedP = -999;
+      let hasSnappedToStory = true;
+
+      function onScrollHeroFlow() {
+        if (!flowContainer || !scrollDockBook || !sdbWingRight) return;
+
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const winH = window.innerHeight;
+        const flowTop = getDocTop(flowContainer);
+        const flowH = flowContainer.offsetHeight;
+        const totalTravel = Math.max(1, flowH - winH);
+
+        // Progress p: 0.00 (Story top) to 1.00 (Shelf docked)
+        let p = (scrollY - flowTop) / totalTravel;
+        p = Math.max(0, Math.min(1, p));
+
+        // Skip micro-jitter
+        if (Math.abs(p - lastRenderedP) < 0.0006 && scrollY > flowTop && scrollY < flowTop + totalTravel) {
+          return;
+        }
+        lastRenderedP = p;
+
+        // Lazy load story when scrolling towards Section 02
+        if (scrollY > 50 || p > 0.00) {
+          ensureStoryLoaded();
+        }
+
+        // Lazy load shelf when user approaches folding
+        if (p > 0.15) {
+          ensureShelfLoaded();
+        }
+
+        // Manage Shelf WebGL suspension & Snap to Story Book
+        const shouldShelfBeActive = p >= 0.65 && p <= 1.08;
+        setShelfActiveState(shouldShelfBeActive);
+
+        // When scrolling back up from shelf towards story, ensure shelf snaps to Book 0 (Hikayem) once
+        if (p >= 0.85) {
+          hasSnappedToStory = false;
+        } else if (p < 0.75 && !hasSnappedToStory && shelfIframe && shelfIframe.contentWindow) {
+          hasSnappedToStory = true;
+          try {
+            shelfIframe.contentWindow.postMessage({ type: 'SNAP_TO_STORY_BOOK' }, '*');
+          } catch (e) {}
+        }
+
+        // 1. Story layer (02 Hikayem Sketchbook):
+        // 100% Solid & fully interactive reading zone (p: 0.00 -> 0.28)
+        // Gentle crossfade out to blank closing volume (p: 0.28 -> 0.38)
+        if (flowStoryLayer) {
+          let storyOpacity = 1;
+          if (p > 0.28) {
+            storyOpacity = Math.max(0, 1 - (p - 0.28) / 0.10);
+          }
+          flowStoryLayer.style.opacity = storyOpacity.toFixed(3);
+          flowStoryLayer.style.pointerEvents = (p <= 0.32) ? 'auto' : 'none';
+          flowStoryLayer.style.visibility = storyOpacity <= 0 ? 'hidden' : 'visible';
+        }
+
+        // 2. 3D Closing book layer:
+        // Appears seamlessly (p: 0.28 -> 0.38), folds completely shut (p: 0.38 -> 0.58), scales & glides (p: 0.58 -> 0.72), fades out early and cleanly (p: 0.66 -> 0.76)
+        if (flow3dBookLayer) {
+          let bookOpacity = 0;
+          if (p < 0.28) {
+            bookOpacity = 0;
+          } else if (p < 0.38) {
+            bookOpacity = (p - 0.28) / 0.10;
+          } else if (p <= 0.66) {
+            bookOpacity = 1;
+          } else if (p <= 0.76) {
+            bookOpacity = Math.max(0, 1 - (p - 0.66) / 0.10);
+          } else {
+            bookOpacity = 0;
+          }
+          flow3dBookLayer.style.opacity = bookOpacity.toFixed(3);
+          flow3dBookLayer.style.visibility = bookOpacity <= 0 ? 'hidden' : 'visible';
+        }
+
+        // 3. Right wing cover folding shut in 3D perspective over left page (p: 0.38 -> 0.58):
+        let foldP = 0;
+        if (p > 0.38) {
+          foldP = smoothstep(Math.min(1, (p - 0.38) / 0.20));
+        }
+        const rightDeg = -foldP * 180;
+        sdbWingRight.style.transform = 'rotateY(' + rightDeg.toFixed(2) + 'deg)';
+        sdbWingRight.style.zIndex = foldP > 0.5 ? 20 : 2;
+
+        // 4. Zoom out in 3D perspective and glide towards shelf slot (p: 0.58 -> 0.74):
+        let zoomP = 0;
+        if (p > 0.58) {
+          zoomP = smoothstep(Math.min(1, (p - 0.58) / 0.16));
+        }
+        const scale = 1 - zoomP * 0.76; // 1.0 down to 0.24
+        const translateY = zoomP * 130;
+        const rotateY = zoomP * 16;
+        const rotateX = zoomP * 8;
+
+        scrollDockBook.style.transform =
+          'translateY(' + translateY.toFixed(1) + 'px) ' +
+          'scale(' + scale.toFixed(3) + ') ' +
+          'rotateY(' + rotateY.toFixed(1) + 'deg) ' +
+          'rotateX(' + rotateX.toFixed(1) + 'deg)';
+
+        // 5. Background shelf fades in cleanly as the book docks (p: 0.70 -> 0.80):
+        if (flowShelfLayer) {
+          let shelfFade = 0;
+          if (p > 0.70) {
+            shelfFade = smoothstep(Math.min(1, (p - 0.70) / 0.10));
+          }
+          flowShelfLayer.style.opacity = shelfFade.toFixed(3);
+          flowShelfLayer.style.pointerEvents = p >= 0.78 ? 'auto' : 'none';
+          flowShelfLayer.style.visibility = shelfFade <= 0 ? 'hidden' : 'visible';
+        }
+
+        // 6. 5-Section Nav Tracking & Story Riffle Trigger
+        const shelfThreshold = flowTop + (flowH - winH) * 0.65;
+        const projectsTop = getDocTop(projectsSec) - winH * 0.35;
+        const contactTop = getDocTop(contactSec) - winH * 0.35;
+
+        [btnNavHome, btnNavStory, btnNavSkills, btnNavProjects, btnNavContact].forEach(b => b && b.classList.remove('is-active'));
+
+        if (scrollY >= contactTop) {
+          if (btnNavContact) btnNavContact.classList.add('is-active');
+        } else if (scrollY >= projectsTop) {
+          if (btnNavProjects) btnNavProjects.classList.add('is-active');
+        } else if (scrollY >= shelfThreshold) {
+          if (btnNavSkills) btnNavSkills.classList.add('is-active');
+        } else if (scrollY >= flowTop - 120) {
+          if (btnNavStory) btnNavStory.classList.add('is-active');
+        } else {
+          if (btnNavHome) btnNavHome.classList.add('is-active');
+        }
+      }
+
+      // 3. Cinematic 3D Deep-Dive Film Reel Navigation Transition Engine
+      const filmDiveOverlay = document.getElementById('filmDiveOverlay');
+      const filmTargetTag = document.getElementById('filmTargetTag');
+      const filmTargetTitle = document.getElementById('filmTargetTitle');
+      const filmTargetSub = document.getElementById('filmTargetSub');
+      const filmDiveScene = document.getElementById('filmDiveScene');
+      let isFilmTransitioning = false;
+      let currentSectionIndex = 0; // 0: Home, 1: Story, 2: Skills, 3: Projects, 4: Contact
+
+      const SECTION_INFO = [
+        { index: 0, tag: 'REEL SCENE // 01', titleTr: '01 ANA SAYFA', titleEn: '01 HOME', tc: 'FRAME: #0001 · PORTRAIT & HERO ROBOTICS' },
+        { index: 1, tag: 'REEL SCENE // 02', titleTr: '02 HİKAYEM', titleEn: '02 STORY', tc: 'FRAME: #0180 · 3D TACTILE SKETCHBOOK' },
+        { index: 2, tag: 'REEL SCENE // 03', titleTr: '03 YETENEKLERİM', titleEn: '03 CAPABILITIES', tc: 'FRAME: #0360 · 3D THREE.JS VOLUMES' },
+        { index: 3, tag: 'REEL SCENE // 04', titleTr: '04 PROJELERİM', titleEn: '04 PROJECTS', tc: 'FRAME: #0540 · 3D CYLINDRICAL RIBBON' },
+        { index: 4, tag: 'REEL SCENE // 05', titleTr: '05 İLETİŞİM', titleEn: '05 CONTACT', tc: 'FRAME: #0720 · CRT RETRO MONITOR WALL' }
+      ];
+
+      function playFilmStripTransition(targetSectionIndex, targetY, onMidpoint) {
+        if (isFilmTransitioning || !filmDiveOverlay) {
+          window.scrollTo({ top: targetY, behavior: 'auto' });
+          if (typeof onMidpoint === 'function') onMidpoint();
+          return;
+        }
+
+        isFilmTransitioning = true;
+        interruptAutoScroll();
+
+        const info = SECTION_INFO[targetSectionIndex] || SECTION_INFO[0];
+        currentSectionIndex = targetSectionIndex;
+
+        // Set Film Badge Content
+        if (filmTargetTag) filmTargetTag.textContent = info.tag;
+        if (filmTargetTitle) filmTargetTitle.textContent = currentLang === 'en' ? info.titleEn : info.titleTr;
+        if (filmTargetSub) filmTargetSub.textContent = info.tc;
+
+        // Reset and activate dive animation
+        filmDiveOverlay.classList.remove('is-diving');
+        void filmDiveOverlay.offsetHeight; // force reflow
+
+        filmDiveOverlay.classList.add('is-active', 'is-diving');
+
+        // Midpoint (480ms): When camera plunges through the optical lens focal plane and shutter flash bursts
+        setTimeout(() => {
+          window.scrollTo({ top: targetY, behavior: 'auto' });
+          onScrollHeroFlow();
+
+          if (typeof onMidpoint === 'function') {
+            onMidpoint();
+          }
+        }, 480);
+
+        // Completion (950ms): When optical flare disperses outward and destination is fully revealed
+        setTimeout(() => {
+          filmDiveOverlay.classList.remove('is-diving', 'is-active');
+          isFilmTransitioning = false;
+        }, 950);
+      }
+
+      function navigateToHome() {
+        playFilmStripTransition(0, 0);
+      }
+
+      function navigateToStory() {
+        ensureStoryLoaded();
+        const { storyY } = getSnapTargets();
+        playFilmStripTransition(1, storyY);
+      }
+
+      function navigateToShelf() {
+        ensureShelfLoaded();
+        const { shelfY } = getSnapTargets();
+        playFilmStripTransition(2, shelfY, () => {
+          setShelfActiveState(true);
+        });
+      }
+
+      function navigateToProjects() {
+        const { projectsY } = getSnapTargets();
+        playFilmStripTransition(3, projectsY);
+      }
+
+      function navigateToContact() {
+        const { contactY } = getSnapTargets();
+        playFilmStripTransition(4, contactY);
+      }
+
+      window.__navigateToHome = navigateToHome;
+      window.__navigateToStory = navigateToStory;
+      window.__navigateToShelf = navigateToShelf;
+      window.__navigateToProjects = navigateToProjects;
+      window.__navigateToContact = navigateToContact;
+
+      // Cancel any ongoing auto-scroll as soon as user takes manual control
+      function interruptAutoScroll() {
+        if (isAutoScrolling) {
+          if (autoScrollAnimId) {
+            cancelAnimationFrame(autoScrollAnimId);
+            autoScrollAnimId = null;
+          }
+          isAutoScrolling = false;
+        }
+      }
+
+      window.addEventListener('wheel', interruptAutoScroll, { passive: true });
+      window.addEventListener('touchstart', interruptAutoScroll, { passive: true });
+      window.addEventListener('keydown', (e) => {
+        if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(e.key)) {
+          interruptAutoScroll();
+        }
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          if (e.metaKey || e.ctrlKey || e.altKey) return;
+          const t = e.target;
+          if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+
+          const sbIframe = document.getElementById('sketchbook-interactive-frame');
+          const flowStoryLayer = document.getElementById('flowStoryLayer');
+          const { storyY, shelfY } = (typeof getSnapTargets === 'function') ? getSnapTargets() : { storyY: 0, shelfY: 9999 };
+          const curY = window.pageYOffset || document.documentElement.scrollTop || 0;
+          const midY = (storyY + shelfY) / 2;
+
+          const isStoryVisible = (curY < midY) || (flowStoryLayer && flowStoryLayer.style.visibility !== 'hidden' && parseFloat(flowStoryLayer.style.opacity || '0') > 0.2);
+
+          if (isStoryVisible && sbIframe && sbIframe.contentWindow) {
+            e.preventDefault();
+            sbIframe.contentWindow.postMessage({ type: 'KEY_ARROW', key: e.key }, '*');
+          }
+        }
+      });
+
+      // Handle postMessages from iframes for smooth scrolling & navigation
+      window.addEventListener('message', (e) => {
+        if (e.data && e.data.type === 'SET_LANG' && (e.data.lang === 'tr' || e.data.lang === 'en')) {
+          if (currentLang !== e.data.lang) {
+            setLanguage(e.data.lang);
+          }
+        }
+        if (e.data && e.data.type === 'PARENT_SCROLL') {
+          interruptAutoScroll();
+          const deltaY = typeof e.data.deltaY === 'number' ? e.data.deltaY : 0;
+          if (deltaY !== 0) {
+            window.scrollBy({ top: deltaY, behavior: 'auto' });
+          }
+        }
+        if (e.data && e.data.type === 'NAVIGATE_TO_STORY') {
+          navigateToStory();
+        }
+      });
+
+      // RAF-throttled scroll
+      let rafPending = false;
+      function handleScroll() {
+        if (!rafPending) {
+          rafPending = true;
+          requestAnimationFrame(() => {
+            onScrollHeroFlow();
+            rafPending = false;
+          });
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      window.addEventListener('resize', handleScroll, { passive: true });
+      onScrollHeroFlow();
+
+      if (btnNavHome) btnNavHome.addEventListener('click', navigateToHome);
+      if (btnNavStory) btnNavStory.addEventListener('click', navigateToStory);
+      if (btnNavSkills) btnNavSkills.addEventListener('click', navigateToShelf);
+      if (btnNavProjects) btnNavProjects.addEventListener('click', navigateToProjects);
+      if (btnNavContact) btnNavContact.addEventListener('click', navigateToContact);
+
+      const btnExploreStory = document.getElementById('btnExploreStory');
+      if (btnExploreStory) {
+        btnExploreStory.addEventListener('click', (e) => {
+          e.preventDefault();
+          ensureStoryLoaded();
+          const { storyY } = getSnapTargets();
+          window.scrollTo({ top: storyY, behavior: 'smooth' });
+        });
+      }
+
+      // Menu Panel Navigation Links
+      const menuLinkHome = document.getElementById('menu-link-home');
+      const menuLinkStory = document.getElementById('menu-link-story');
+      const menuLinkSkills = document.getElementById('menu-link-skills');
+      const menuLinkProjects = document.getElementById('menu-link-projects');
+      const menuLinkContact = document.getElementById('menu-link-contact');
+
+      if (menuLinkHome) menuLinkHome.addEventListener('click', (e) => { e.preventDefault(); navigateToHome(); toggleMenu(false); });
+      if (menuLinkStory) menuLinkStory.addEventListener('click', (e) => { e.preventDefault(); navigateToStory(); toggleMenu(false); });
+      if (menuLinkSkills) menuLinkSkills.addEventListener('click', (e) => { e.preventDefault(); navigateToShelf(); toggleMenu(false); });
+      if (menuLinkProjects) menuLinkProjects.addEventListener('click', (e) => { e.preventDefault(); navigateToProjects(); toggleMenu(false); });
+      if (menuLinkContact) menuLinkContact.addEventListener('click', (e) => { e.preventDefault(); navigateToContact(); toggleMenu(false); });
+
+      // 4. Slide-Down Menu Toggle
+      const menuBtn = document.getElementById('menu-toggle-btn');
+      const menuPanel = document.getElementById('site-menu-panel');
+
+      function toggleMenu(open) {
+        const isCurrentlyOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+        const targetState = typeof open === 'boolean' ? open : !isCurrentlyOpen;
+
+        menuBtn.setAttribute('aria-expanded', String(targetState));
+        menuPanel.setAttribute('aria-hidden', String(!targetState));
+
+        if (targetState) {
+          menuPanel.classList.add('is-open');
+          document.documentElement.classList.add('menu-open');
+        } else {
+          menuPanel.classList.remove('is-open');
+          document.documentElement.classList.remove('menu-open');
+        }
+      }
+
+      if (menuBtn && menuPanel) {
+        menuBtn.addEventListener('click', () => toggleMenu());
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
+            toggleMenu(false);
+          }
+        });
+      }
+
+      // 5. Unified Projects Dual-Pane & Topic Stream Controller
+      const PROJECT_TOPICS = {
+        uav: {
+          badge: 'HAVACILIK // SAVAŞAN İHA OTONOMİSİ',
+          count: '2 PROJE',
+          titleTr: 'Havacılık & Savaşan SİHA Muharebe Otonomisi',
+          titleEn: 'Aerospace & Combat UAV Autonomous Warfare',
+          descTr: 'TEKNOFEST Savaşan İHA Yarışması kapsamında yüksek hızlı hava-hava muharebe senaryolarında gerçek zamanlı YOLOv8 nesne tespiti, ByteTrack takip, ArduPilot & MAVLink otonom güdüm entegrasyonu, kamikaze dalış mimarileri ve Gazebo Harmonic & ROS 2 simülasyon test ortamı.',
+          descEn: 'Real-time YOLOv8 object detection, ByteTrack tracking, ArduPilot & MAVLink autonomous guidance, kamikaze dive trajectories and Gazebo Harmonic simulation under high-speed dogfight combat scenarios.',
+          projects: [
+            {
+              title: 'Şahi Otonom Savaşan SİHA Yazılım Mimarisi',
+              category: 'TEKNOFEST // SAVAŞAN İHA',
+              flagship: true,
+              tagBadge: 'YAZILIM EKİBİ LİDERİ',
+              descTr: 'Önceden gelen görüntü işleme ilgim ve projelerimle Şahi Otonom SİHA takımında Yazılım Ekibi Lideri olarak görev aldım. TEKNOFEST Savaşan İHA Yarışması kapsamında yüksek hızlı hava-hava muharebe senaryolarında gerçek zamanlı YOLOv8 nesne tespiti, ByteTrack takip, ArduPilot & MAVLink otonom güdüm entegrasyonu ve kamikaze dalış algoritmalarını yönettim. Uçuş öncesi tüm sistemleri Gazebo Harmonic ve ROS 2 ortamında simüle ederek uçuş testlerini gerçekleştirdim.',
+              descEn: 'Led the software team for Sahi Autonomous Combat UAV at TEKNOFEST. Engineered 120 FPS real-time YOLOv8 target detection, ByteTrack, ArduPilot MAVLink guidance, kamikaze dive trajectories, and full digital twin testing in Gazebo Harmonic & ROS 2.',
+              tech: ['YOLOv8', 'ByteTrack', 'ArduPilot', 'MAVLink', 'Gazebo Harmonic', 'ROS 2', 'C++', 'Python'],
+              repo: 'Sahi-Otonom-Savasan-IHA',
+              url: 'https://github.com/ozanardaozcelik'
+            },
+            {
+              title: 'SİHA Telemetri & Yer Kontrol İstasyonu (GCS)',
+              category: 'TELEMETRİ & GCS',
+              flagship: false,
+              tagBadge: 'GERÇEK ZAMANLI KONTROL',
+              descTr: '433/868 MHz RF telemetri veri akışını gerçek zamanlı ayrıştıran, yapay ufuk, 3D yönelim ve MAVLink telemetri izleme arayüzü. Otonom kilitlenme ve kamikaze dalış telemetrilerinin operatöre anlık aktarımı.',
+              descEn: 'Real-time artificial horizon, 433/868 MHz RF telemetry stream parser, 3D orientation rendering, and MAVLink mission command panel.',
+              tech: ['Qt / C++', 'MAVLink', 'RF Telemetry', 'Python', 'GUI'],
+              repo: 'UAV-GroundControl-Station',
+              url: 'https://github.com/ozanardaozcelik'
+            }
+          ]
+        },
+        vision: {
+          badge: 'ÇÖZÜM MAKİNA // ISEE VISION',
+          count: '2 PROJE',
+          titleTr: 'Endüstriyel Bilgisayarlı Görü & İSG Güvenlik Sistemleri',
+          titleEn: 'Industrial Computer Vision & OHS Safety Inspection',
+          descTr: 'Fabrikalarda, hastanelerde ve ofislerde iş sağlığı ve güvenliği (İSG) kurallarını denetleyen akıllı kamera yazılımları; üretim hatlarında mikron hassasiyetli yüzey kusur ve anomali tespiti.',
+          descEn: 'Intelligent camera systems for workplace occupational health and safety (OHS/ISG) in factories, hospitals, and offices; high-precision surface defect and anomaly inspection in manufacturing lines.',
+          projects: [
+            {
+              title: 'ISEE Vision — Fabrika, Hastane & Ofis İSG Denetim Sistemleri',
+              category: 'ENDÜSTRİYEL İSG & GÖRÜNTÜ İŞLEME',
+              flagship: true,
+              tagBadge: 'ÇÖZÜM MAKİNA // SAHA PROJESİ',
+              descTr: 'Fabrikalarda, hastanelerde ve ofislerde insanlara yönelik İSG kontrolleri (baret, reflektörlü yelek, tehlikeli alan ihlali vb.) yapan akıllı kameraların yazılımlarını kurdum, inceledim ve saha ortamında optimize ettim. Sıfır gecikmeli RTSP video akışı üzerinden çoklu kamera nesne tespiti.',
+              descEn: 'Deployed, inspected, and optimized intelligent camera software for workplace health & safety (PPE compliance, helmet, vest, restricted zone breach) across factories, hospitals, and office environments.',
+              tech: ['Gerçek Zamanlı Nesne Tespiti', 'İSG Kameraları', 'RTSP Stream', 'OpenCV', 'CUDA', 'Python'],
+              isCorporate: true,
+              corporateTag: 'ÇÖZÜM MAKİNA AR-GE'
+            },
+            {
+              title: 'ISEE Vision — Endüstriyel Yüzey Kusur & Anomali Tespiti',
+              category: 'OPTİK KALİTE KONTROL',
+              flagship: false,
+              tagBadge: 'ÇÖZÜM MAKİNA // ÜRETİM HATTI',
+              descTr: 'Seri üretim bantlarında mikron düzeyinde yüzey hataları, çizik, çatlak ve göçük deformasyonlarını PatchCore ve DINO ViT mimarileriyle tespit eden, sıfır hata toleranslı yüksek hızlı optik muayene hattı.',
+              descEn: 'Zero-defect optical quality inspection pipeline identifying sub-millimeter surface flaws, cracks, and deformation using PatchCore and DINO ViT architectures.',
+              tech: ['PatchCore', 'DINO ViT', 'Optik Muayene', 'TensorRT', 'C++', 'Python'],
+              isCorporate: true,
+              corporateTag: 'ÇÖZÜM MAKİNA AR-GE'
+            }
+          ]
+        },
+        robotics: {
+          badge: 'ÇÖZÜM MAKİNA // ISEE ROBOTICS',
+          count: '2 PROJE',
+          titleTr: 'Robotik Sistemler, Otonom Mobil Robotlar & Dijital İkiz',
+          titleEn: 'Robotics Systems, AMRs & Digital Twin Simulation',
+          descTr: '6 eksenli endüstriyel robot kollar, M20 otonom mobil robot (AMR) ve Tron 1 robot platformları; Gazebo Harmonic 3D fizik simülasyonları, ROS 2 ve MQTT telemetri entegrasyonu.',
+          descEn: '6-axis industrial arms, M20 autonomous mobile robots (AMR), and Tron 1 platforms; 3D physics simulation in Gazebo Harmonic, ROS 2, and MQTT telemetry.',
+          projects: [
+            {
+              title: 'ISEE Robotics — Çoklu Robot Platformları (Robot Kol, M20 AMR & Tron 1)',
+              category: 'OTONOM ROBOTİK',
+              flagship: true,
+              tagBadge: 'ÇÖZÜM MAKİNA // ENDÜSTRİYEL ROBOTİK',
+              descTr: 'Endüstriyel 6 eksenli robot kolların yanı sıra M20 otonom mobil robot (AMR) ve Tron 1 robot platformları üzerinde hareket planlama, otonom rota takibi ve sensör füzyonu. Gerçek dünya testlerinden önce Gazebo Harmonic ortamında 3D fizik simülasyonları gerçekleştirildi; ROS 2 ve MQTT telemetri haberleşmesi kuruldu.',
+              descEn: 'Engineered motion planning, autonomous route tracking, and sensor fusion for 6-axis arms, M20 AMR, and Tron 1 platforms with Gazebo Harmonic 3D simulations and ROS 2/MQTT telemetry.',
+              tech: ['6-Eksen Robot Kol', 'M20 AMR', 'Tron 1 Robot', 'Gazebo Harmonic', 'ROS 2', 'MQTT', 'Nav2'],
+              isCorporate: true,
+              corporateTag: 'ÇÖZÜM MAKİNA AR-GE'
+            },
+            {
+              title: 'Gazebo Harmonic 3D Dijital İkiz & Simülasyon Test Ortamı',
+              category: 'ROBOTİK SİMÜLASYON',
+              flagship: false,
+              tagBadge: 'DİJİTAL İKİZ // SİMÜLASYON',
+              descTr: 'ROS 2 entegrasyonlu Gazebo Harmonic 3D fizik simülasyonu, LiDAR 3D nokta bulutu haritalama, engelden kaçınma ve donanım döngüde (HIL/SIL) otonom navigasyon doğrulama altyapısı.',
+              descEn: 'High-fidelity 3D physics simulation with ROS 2, 3D LiDAR point cloud mapping, dynamic obstacle avoidance, and Hardware-in-the-Loop (HIL) benchmark environment.',
+              tech: ['Gazebo Harmonic', 'ROS 2 Humble', 'URDF/SDF', 'LiDAR 3D', 'Nav2', 'C++'],
+              repo: 'Gazebo-ROS2-DigitalTwin',
+              url: 'https://github.com/ozanardaozcelik'
+            }
+          ]
+        },
+        agentic_ai: {
+          badge: 'MARTUR FOMPAK // AGENTIC AI',
+          count: '1 PROJE',
+          titleTr: 'Kurumsal Yapay Zeka & Çoklu Ajan (Agentic AI) Otomasyonu',
+          titleEn: 'Enterprise AI & Multi-Agent (Agentic AI) Automation',
+          descTr: 'Küresel otomotiv fabrikası bünyesinde, departmanların ihtiyaçları doğrultusunda AI modelleri geliştirme, üretim ve verimliliği artıran LLM destekli çoklu ajan (Agentic AI) otomasyon iş akışları.',
+          descEn: 'Developing AI models for departmental needs and implementing LLM-powered Multi-Agent (Agentic AI) workflow automations in a global automotive manufacturing facility.',
+          projects: [
+            {
+              title: 'Martur Fompak — Çoklu Ajan (Agentic AI) Otomasyonu & Kurumsal AI',
+              category: 'KURUMSAL YAPAY ZEKA',
+              flagship: true,
+              tagBadge: 'MARTUR FOMPAK // OTOMOTİV FABRİKASI',
+              descTr: 'Küresel otomotiv fabrikasında şirket içi diğer departmanların ihtiyaçları doğrultusunda yapay zeka modelleri geliştirdim. Üretim süreçlerini optimize eden ve verimliliği artıran LLM destekli çoklu ajan (Agentic AI) otomasyon iş akışlarını hayata geçirdim. Dinamik iş hayatı ve kurumsal üretim dinamikleri için güçlü bir başlangıç ve tecrübe sağladı.',
+              descEn: 'Developed targeted AI models across enterprise departments and orchestrated LLM-driven Multi-Agent AI automation pipelines optimizing production efficiency and manufacturing workflows.',
+              tech: ['Agentic AI', 'Multi-Agent LLM', 'RAG Mimarisi', 'PyTorch', 'Hugging Face', 'FastAPI'],
+              isCorporate: true,
+              corporateTag: 'MARTUR FOMPAK INTERNATIONAL'
+            }
+          ]
+        },
+        hmi: {
+          badge: 'ARAYÜZ TASARIMI // ENDÜSTRİYEL HMI',
+          count: '2 PROJE',
+          titleTr: 'Arayüz Tasarımı, Web Panel & Endüstriyel HMI',
+          titleEn: 'Interface Design, Web Panels & Industrial HMI',
+          descTr: 'Fabrika sahası ve operatörler için ISEE Vision Web Kontrol Paneli, endüstriyel dokunmatik HMI arayüzleri, ISEE Robotics takip ve robot kontrol panelleri, SİHA telemetri arayüzleri.',
+          descEn: 'Industrial touch HMI panels, real-time Web Control Dashboards for ISEE Vision, robot tracking and teleoperation UI for ISEE Robotics, and UAV ground telemetry consoles.',
+          projects: [
+            {
+              title: 'ISEE Vision — Web Kontrol Paneli & Endüstriyel Dokunmatik HMI',
+              category: 'ENDÜSTRİYEL UI/UX & HMI',
+              flagship: true,
+              tagBadge: 'ÇÖZÜM MAKİNA // HMI TASARIMI',
+              descTr: 'Fabrika operatörleri ve kalite mühendislerinin kameraları, kalite kontrol parametrelerini ve İSG güvenlik alarmlarını anlık izleyip yönetebildiği modern Web Kontrol Paneli ve endüstriyel dokunmatik ekranlar için HMI arayüzleri tasarlayıp devreye aldım.',
+              descEn: 'Architected and built real-time Web Control Dashboards and industrial touch HMI interfaces allowing factory operators to monitor live camera streams, quality alerts, and safety parameters.',
+              tech: ['Endüstriyel Dokunmatik HMI', 'Web Kontrol Paneli', 'WebSocket', 'Canlı Telemetri', 'UI/UX'],
+              isCorporate: true,
+              corporateTag: 'ÇÖZÜM MAKİNA ISEE VISION'
+            },
+            {
+              title: 'ISEE Robotics — Robot Kontrol & Canlı Takip Arayüzü',
+              category: 'ROBOTİK HMI & TELEMETRİ',
+              flagship: false,
+              tagBadge: 'ÇÖZÜM MAKİNA // ROBOT KONTROL',
+              descTr: 'Endüstriyel robot kolların, M20 AMR ve Tron 1 robotlarının anlık pozisyon, rota haritası, batarya ve telemetri verilerini operatöre görselleştiren, acil durum ve görev atama yetenekli kontrol paneli.',
+              descEn: 'Interactive telemetry tracking and control dashboard rendering live robot positions, path planning, battery diagnostics, and emergency stop overrides for M20 AMR and Tron 1 robots.',
+              tech: ['Robot Takip Paneli', 'Rota Görselleştirme', 'MQTT Telemetri', 'Endüstriyel HMI', 'Dashboard'],
+              isCorporate: true,
+              corporateTag: 'ÇÖZÜM MAKİNA ISEE ROBOTICS'
+            }
+          ]
+        },
+        embedded: {
+          badge: 'GÖMÜLÜ SİSTEMLER // GNC & DONANIM',
+          count: '2 PROJE',
+          titleTr: 'Gömülü Sistemler, GNC Güdüm & Donanım Entegrasyonu',
+          titleEn: 'Embedded Systems, GNC Guidance & Hardware Integration',
+          descTr: 'ArduPilot & MAVLink telemetri köprüsü, Jetson CUDA hızlandırmalı optik akış ve RF haberleşme mimarileri.',
+          descEn: 'ArduPilot & MAVLink telemetry bridge, Jetson CUDA hardware-accelerated optical flow, and robust serial/RF telemetry pipelines.',
+          projects: [
+            {
+              title: 'ArduPilot & MAVLink GNC Donanım Köprüsü',
+              category: 'GNC & OTONOM GÜDÜM',
+              flagship: false,
+              tagBadge: 'MAVLINK GNC KÖPRÜSÜ',
+              descTr: 'Uçuş kontrol kartı (Pixhawk) ile Jetson yardımcı bilgisayar arasında yüksek hızlı UART seri haberleşme, durum kestirimi ve otonom rota noktası aktarımı sağlayan MAVLink GNC köprüsü.',
+              descEn: 'Low-latency UART serial bridge synchronizing Pixhawk autopilot state estimation and autonomous waypoint trajectories with companion computer via MAVLink protocol.',
+              tech: ['ArduPilot', 'MAVLink', 'Serial UART', 'C++', 'Python'],
+              repo: 'ArduPilot-MAVLink-GNC-Bridge',
+              url: 'https://github.com/ozanardaozcelik'
+            },
+            {
+              title: 'CUDA GPU Hızlandırmalı Optik Akış (Lucas-Kanade)',
+              category: 'GPGPU HIZLANDIRMA',
+              flagship: false,
+              tagBadge: 'JETSON ORIN GÖMÜLÜ',
+              descTr: 'NVIDIA Jetson gömülü donanım mimarisinde sıfır gecikmeli Lucas-Kanade optik akış ve gerçek zamanlı hareket vektör kestirimi.',
+              descEn: 'Zero-latency Lucas-Kanade optical flow and dense feature velocity vector computation accelerated natively on NVIDIA Jetson GPU.',
+              tech: ['CUDA C++', 'NVIDIA Jetson Orin', 'TensorRT', 'OpenCV'],
+              repo: 'CUDA-Optical-Flow-Jetson',
+              url: 'https://github.com/ozanardaozcelik'
+            }
+          ]
+        }
+      };
+
+      const dphBadge = document.getElementById('dphBadge');
+      const dphCount = document.getElementById('dphCount');
+      const dphTitle = document.getElementById('dphTitle');
+      const dphDesc = document.getElementById('dphDesc');
+      const projectsCardsDeck = document.getElementById('projectsCardsDeck');
+      const topicStreamCards = document.querySelectorAll('.topic-stream-card');
+      let currentTopicKey = 'uav';
+
+      window.__renderCurrentTopic = () => renderTopicProjects(currentTopicKey);
+
+      function renderTopicProjects(topicKey) {
+        currentTopicKey = topicKey || currentTopicKey;
+        const topic = PROJECT_TOPICS[currentTopicKey] || PROJECT_TOPICS.uav;
+        const isEn = (currentLang === 'en');
+
+        if (dphBadge) dphBadge.textContent = topic.badge;
+        if (dphCount) dphCount.textContent = topic.count;
+        if (dphTitle) dphTitle.textContent = isEn ? topic.titleEn : topic.titleTr;
+        if (dphDesc) dphDesc.textContent = isEn ? topic.descEn : topic.descTr;
+
+        if (!projectsCardsDeck) return;
+        projectsCardsDeck.innerHTML = '';
+
+        topic.projects.forEach(p => {
+          const card = document.createElement('article');
+          card.className = 'project-deck-card' + (p.flagship ? ' is-flagship' : '');
+
+          const header = document.createElement('div');
+          header.className = 'pdc-header';
+
+          const catBadge = document.createElement('span');
+          catBadge.className = 'pdc-cat-badge';
+          catBadge.textContent = p.category;
+          header.appendChild(catBadge);
+
+          if (p.flagship) {
+            const flagTag = document.createElement('span');
+            flagTag.className = 'pdc-flag-tag';
+            flagTag.textContent = '★ FLAGSHIP';
+            header.appendChild(flagTag);
+          } else if (p.tagBadge) {
+            const roleTag = document.createElement('span');
+            roleTag.className = 'pdc-role-tag';
+            roleTag.textContent = p.tagBadge;
+            header.appendChild(roleTag);
+          }
+
+          const title = document.createElement('h4');
+          title.className = 'pdc-title';
+          title.textContent = p.title;
+
+          const desc = document.createElement('p');
+          desc.className = 'pdc-desc';
+          desc.textContent = isEn ? p.descEn : p.descTr;
+
+          const tagsWrap = document.createElement('div');
+          tagsWrap.className = 'pdc-tags';
+          p.tech.forEach(t => {
+            const tag = document.createElement('span');
+            tag.className = 'pdc-tag';
+            tag.textContent = t;
+            tagsWrap.appendChild(tag);
+          });
+
+          const footer = document.createElement('div');
+          footer.className = 'pdc-footer';
+
+          if (p.isCorporate) {
+            const corpBadge = document.createElement('div');
+            corpBadge.className = 'pdc-corp-badge';
+            corpBadge.innerHTML = `<span class="corp-dot"></span> <span>${p.corporateTag}</span>`;
+            footer.appendChild(corpBadge);
+          } else {
+            const stats = document.createElement('div');
+            stats.className = 'pdc-stats';
+            stats.innerHTML = `<span class="stat-pill">★ <span id="star-${p.repo}">--</span></span> <span class="stat-pill">⑂ <span id="fork-${p.repo}">--</span></span>`;
+            footer.appendChild(stats);
+
+            const link = document.createElement('a');
+            link.href = p.url || 'https://github.com/ozanardaozcelik';
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.className = 'pdc-link-btn';
+            link.innerHTML = `<span>GitHub'da İncele</span> ↗`;
+            footer.appendChild(link);
+          }
+
+          card.appendChild(header);
+          card.appendChild(title);
+          card.appendChild(desc);
+          card.appendChild(tagsWrap);
+          card.appendChild(footer);
+
+          projectsCardsDeck.appendChild(card);
+        });
+
+        hydrateGitHubData();
+      }
+
+      // Global hook for 3D topic stream selection
+      window.__selectTopic = function(topicId) {
+        renderTopicProjects(topicId);
+        if (typeof window.__updateTopics3DSelection === 'function') {
+          window.__updateTopics3DSelection(topicId);
+        }
+      };
+
+      // Initialize default topic
+      renderTopicProjects('uav');
+
+
+      // 6. Live GitHub Repositories Hydration
+      async function hydrateGitHubData() {
+        try {
+          const res = await fetch('https://api.github.com/users/ozanardaozcelik/repos?per_page=100');
+          if (!res.ok) return;
+          const repos = await res.json();
+
+          repos.forEach(repo => {
+            const name = repo.name;
+            const starEl = document.getElementById('star-' + name);
+            const forkEl = document.getElementById('fork-' + name);
+
+            if (starEl) starEl.textContent = repo.stargazers_count;
+            if (forkEl) forkEl.textContent = repo.forks_count;
+          });
+        } catch (e) {}
+      }
+
+      hydrateGitHubData();
+
+      // 7. IntersectionObserver for [data-reveal]
+      const revealTargets = document.querySelectorAll('[data-reveal]');
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (prefersReduced) {
+        revealTargets.forEach((el) => el.classList.add('is-visible'));
+      } else if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.10,
+          rootMargin: '0px 0px -6% 0px'
+        });
+
+        revealTargets.forEach((el) => observer.observe(el));
+      } else {
+        revealTargets.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      // 8. ThreeUI Void Field (PredictiveArcCanvas) Raw-WebGL Dot-Matrix Preloader (Zero-Lag 60-120FPS)
+      const preloader = document.getElementById('sitePreloader');
+      if (preloader) {
+        const canvas = document.getElementById('voidMatrixCanvas');
+        const voidNum = document.getElementById('voidNum');
+        const voidProgressBar = document.getElementById('voidProgressBar');
+
+        let gl = null;
+        let animId = null;
+
+        if (canvas) {
+          gl = canvas.getContext('webgl', { alpha: true, antialias: false, powerPreference: 'high-performance' });
+          if (gl) {
+            const resize = () => {
+              const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+              canvas.width = Math.floor(canvas.clientWidth * dpr);
+              canvas.height = Math.floor(canvas.clientHeight * dpr);
+              gl.viewport(0, 0, canvas.width, canvas.height);
+            };
+            window.addEventListener('resize', resize, { passive: true });
+            resize();
+
+            const vsSource = `
+              attribute vec2 position;
+              void main() {
+                gl_Position = vec4(position, 0.0, 1.0);
+              }
+            `;
+
+            const fsSource = `
+              precision highp float;
+              uniform vec2 iResolution;
+              uniform float iTime;
+              uniform vec2 uMouse;
+
+              vec2 barrel(vec2 uv, float amt) {
+                vec2 cc = uv - 0.5;
+                float r = dot(cc, cc);
+                return uv + cc * r * amt;
+              }
+
+              float rand(vec2 co) {
+                return fract(sin(dot(co, vec2(12.9898,78.233))) * 43758.5453);
+              }
+
+              void main() {
+                vec2 uv = gl_FragCoord.xy / iResolution.xy;
+                vec2 mouseOffset = (uMouse - 0.5) * 0.05;
+                uv += mouseOffset;
+                uv = barrel(uv, 0.2);
+
+                if(uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
+                  gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+                  return;
+                }
+
+                vec2 gridCount = vec2(100.0, 100.0 * (iResolution.y / iResolution.x));
+                vec2 gridUv = fract(uv * gridCount);
+                vec2 id = floor(uv * gridCount);
+
+                vec2 cc = id / gridCount - 0.5;
+                float dist = length(cc);
+                float pulse = sin(iTime * 1.5 - dist * 10.0) * 0.5 + 0.5;
+
+                float dotSize = 0.35 * pulse;
+                float d = length(gridUv - 0.5);
+                float circle = smoothstep(dotSize, dotSize - 0.05, d);
+
+                float scanline = sin(uv.y * 800.0) * 0.03;
+                float flicker = rand(vec2(iTime, id.y)) > 0.98 ? 0.4 : 1.0;
+
+                // Perceptual color grading matching site's Electric Cyan & Cybernetic Amber
+                vec3 cyanCol = vec3(0.0, 0.82, 1.0);
+                vec3 amberCol = vec3(1.0, 0.55, 0.22);
+                vec3 dotTint = mix(amberCol, cyanCol, smoothstep(0.08, 0.55, dist));
+
+                vec3 col = vec3(circle * pulse * flicker);
+                col -= scanline;
+                col *= dotTint;
+                col *= smoothstep(0.85, 0.15, dist);
+
+                gl_FragColor = vec4(col, 1.0);
+              }
+            `;
+
+            const createShader = (type, src) => {
+              const s = gl.createShader(type);
+              gl.shaderSource(s, src);
+              gl.compileShader(s);
+              return s;
+            };
+
+            const prog = gl.createProgram();
+            gl.attachShader(prog, createShader(gl.VERTEX_SHADER, vsSource));
+            gl.attachShader(prog, createShader(gl.FRAGMENT_SHADER, fsSource));
+            gl.linkProgram(prog);
+            gl.useProgram(prog);
+
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+              -1, -1,  1, -1, -1,  1,
+              -1,  1,  1, -1,  1,  1
+            ]), gl.STATIC_DRAW);
+
+            const posLoc = gl.getAttribLocation(prog, "position");
+            gl.enableVertexAttribArray(posLoc);
+            gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+            const resLoc = gl.getUniformLocation(prog, "iResolution");
+            const timeLoc = gl.getUniformLocation(prog, "iTime");
+            const mouseLoc = gl.getUniformLocation(prog, "uMouse");
+
+            let mouseX = 0.5, mouseY = 0.5;
+            window.addEventListener('pointermove', (e) => {
+              mouseX = e.clientX / window.innerWidth;
+              mouseY = 1.0 - (e.clientY / window.innerHeight);
+            }, { passive: true });
+
+            const startTime = performance.now();
+            const render = (time) => {
+              const elapsed = (time - startTime) / 1000.0;
+              gl.uniform2f(resLoc, canvas.width, canvas.height);
+              gl.uniform1f(timeLoc, elapsed);
+              gl.uniform2f(mouseLoc, mouseX, mouseY);
+              gl.drawArrays(gl.TRIANGLES, 0, 6);
+              animId = requestAnimationFrame(render);
+            };
+            animId = requestAnimationFrame(render);
+          }
+        }
+
+        // Smooth loading progression
+        let currentPct = 0;
+        let isWindowLoaded = document.readyState === 'complete';
+        let isDone = false;
+        const loadStart = performance.now();
+
+        function updateProgress(now) {
+          if (isDone) return;
+          const elapsed = now - loadStart;
+
+          if (!isWindowLoaded) {
+            currentPct = Math.min(88, elapsed / 10);
+          } else {
+            currentPct = Math.min(100, currentPct + 4.5);
+          }
+
+          const shown = Math.min(100, Math.round(currentPct));
+          if (voidNum) voidNum.textContent = String(shown);
+          if (voidProgressBar) voidProgressBar.style.width = shown + '%';
+
+          if (shown >= 100) {
+            isDone = true;
+            setTimeout(() => {
+              preloader.classList.add('is-loaded');
+              setTimeout(() => {
+                if (animId) cancelAnimationFrame(animId);
+                preloader.style.display = 'none';
+              }, 450);
+            }, 150);
+            return;
+          }
+
+          requestAnimationFrame(updateProgress);
+        }
+
+        requestAnimationFrame(updateProgress);
+
+        window.addEventListener('load', () => {
+          isWindowLoaded = true;
+        });
+
+        // Fast safety fallback: max 1.2s
+        setTimeout(() => {
+          isWindowLoaded = true;
+        }, 1200);
+      }
+    })();
+  </script>
 </body>
 </html>
